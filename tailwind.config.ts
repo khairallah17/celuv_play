@@ -12,7 +12,22 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "gradient-primary": "",
       },
+      dropShadow: {
+        "primary": "0px 3px 8px rgba(2, 156, 190, 0.5)",
+      },
+      boxShadow: {
+        "secondary": "0px 5px 20px rgba(0, 201, 184, 0.25)",
+      },
+      colors: {
+        primary: {
+          DEFAULT: "#029BBD",
+        },
+        secondary: {
+          DEFAULT: "#00C9B8"
+        }
+      }
     },
   },
   plugins: [],
