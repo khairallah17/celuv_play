@@ -12,7 +12,7 @@ const ThemePark = () => {
         <motion.div
             initial={{y:100, opacity: 0}}
             whileInView={{y:0, opacity: 1}}
-            transition={{delay: 1, duration: .5}}
+            transition={{delay: 1, duration: 1}}
             className='container mx-auto mt-32 flex flex-col item-center gap-12 mb-10 z-[99] relative'>
 
             <h2 className='uppercase text-primary-light text-7xl font-bold text-center'>
@@ -23,7 +23,7 @@ const ThemePark = () => {
                     Our aim is to create a <span className='font-bold'>WEB3 Theme Park Dao</span> focusing on entertainement and DeFi.
                 </p>
                 <p className='font-light'>
-                    At the heart of our endeavors is our flagship <span className='font-bold'>dApp "ASTIAN"</span>
+                    At the heart of our endeavors is our flagship <span className='font-bold'>dApp &quot;ASTIAN&quot;</span>
                 </p>
             </div>
         </motion.div>
@@ -35,7 +35,7 @@ const ThemePark = () => {
             <motion.div
             initial={{y:100, opacity: 0}}
             whileInView={{y:0, opacity: 1}} 
-            transition={{delay: 1, duration: .5}}
+            transition={{delay: 1, duration: 1}}
             className="container mx-auto flex flex-col item-center gap-12 mb-10 z-[99] relative">
                 <h2 className='uppercase text-primary-light text-7xl font-bold text-center'>
                     vision & goal
@@ -43,14 +43,14 @@ const ThemePark = () => {
 
                 <div className="text-primary w-full lg:w-[1000px] border-secondary drop-shadow-primary bg-white border rounded-xl py-10 self-center px-10 flex items-center gap-10">
                     <h4 className='font-bold text-6xl uppercase text-right'>
-                        "<br />new<br />daily
+                        &quot;<br />new<br />daily
                     </h4>
                     <div className='text-third flex flex-col gap-4 font-light'>
                         <p>
                             <span className='font-bold'>Dismantling the bariers</span> associate with the crypto and blockchain realm, both physically and psychologically
                         </p>
                         <p>
-                            Our objective is to infuse the WEB 3 era with <span className='font-bold'>enjoyment and accessibility</span>, seamlessly integrating these concepts into people's <span className='font-bold'>daily life</span>.
+                            Our objective is to infuse the WEB 3 era with <span className='font-bold'>enjoyment and accessibility</span>, seamlessly integrating these concepts into people&apos;s <span className='font-bold'>daily life</span>.
                         </p>
                         <p>
                             We aspire to serve as the prmier gateway into the world of the WEB 3 and the blockchain ecosystem.
@@ -62,7 +62,7 @@ const ThemePark = () => {
             <motion.div
             initial={{y:100, opacity: 0}}
             whileInView={{y:0, opacity: 1}}
-            transition={{delay: 1, duration: .5}}
+            transition={{delay: 1, duration: 1}}
             className='container mx-auto grid grid-rows-2 overflow-visible'>
                 
                 <div>
