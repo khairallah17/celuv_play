@@ -77,7 +77,7 @@ const ThemePark = () => {
                         </div>
                     </div>
 
-                    <div className='bg-nft bg-center bg-no-repeat bg-cover w-auto h-[280px] aspect-[2.76] flex items-center justify-start gap-4 overflow-visible'>
+                    <div className='bg-nft-image bg-center bg-no-repeat bg-cover w-auto h-[280px] aspect-[2.76] flex items-center justify-start gap-4 overflow-visible'>
                         <div className='flex flex-col items-start gap-6 mt-[-30px] ml-12'>
                             <ProjectedButton imageSize='w-48' addClass='mt-[-20px]' image='/opensea.svg' color='nft'/>
                             <div className='flex items-center gap-3'>

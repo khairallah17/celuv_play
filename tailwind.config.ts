@@ -17,7 +17,9 @@ const config: Config = {
         "linear-primary": "linear-gradient(to left, #2BC1D6, #049CBE)",
         "linear-secondary": "linear-gradient(to bottom right, rgba(43, 193, 214, .50), rgba(4, 156, 190, .5))",
         "phone": "url(/astian_dapp.svg)",
-        "nft": "url(/nft_world.svg)"
+        "nft-image": "url(/nft_world.svg)",
+        "slide1": "url(/site-banner-main.png)",
+        "slide2": "url(/site-banner-1.png)",
       },
       dropShadow: {
         "primary": "0px 3px 8px rgba(2, 156, 190, 0.5)",

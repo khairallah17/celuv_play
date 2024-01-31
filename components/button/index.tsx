@@ -17,7 +17,7 @@ const ProjectedButton = (props: BtnProps) => {
   const stopAnimate = () => setBtnAnimation(false)
 
   return (
-    <div>
+    <div className='h-[80px]'>
       <div className={`relative w-fit duration-200 ${btnAnimation && props.addClass}`}>
         <button onMouseEnter={startAnimate} onMouseLeave={stopAnimate} className={`bg-white border border-nft w-fit relative px-10 rounded-3xl py-3 z-40 h-20 flex items-center justify-center`}>
             <Image src={props.image} height={0} width={0} alt='ios logo' className={`${props.imageSize ? props.imageSize : 'w-auto h-auto'}`} quality={100} />
