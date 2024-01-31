@@ -1,11 +1,34 @@
-import React from 'react'
+"use client"
+import React, { useState } from 'react'
 import Image from 'next/image'
+import { motion } from "framer-motion"
 
-const ProjectedButton = () => {
+type BtnProps = {
+  image: string,
+  color: string,
+  addClass: string,
+  imageSize: string
+}
+
+const ProjectedButton = (props: BtnProps) => {
+
+  const [btnAnimation ,setBtnAnimation] = useState<boolean>(false)
+  const startAnimate = () => setBtnAnimation(true)
+  const stopAnimate = () => setBtnAnimation(false)
+
   return (
-    <div className='bg-white border border-ios relative w-[200px] rounded-xl py-3'>
-        <div className='bg-ios-light border-ios border absolute left-0 right-auto w-full h-full rounded-xl top-3 z-[-1]'></div>
-        <Image src="/ios.png" height={50} width={50} alt='ios logo' className='w-auto h-auto' quality={100} />
+    <div>
+      <div className={`relative w-fit duration-200 ${btnAnimation && props.addClass}`}>
+        <button onMouseEnter={startAnimate} onMouseLeave={stopAnimate} className={`bg-white border border-nft w-fit relative px-10 rounded-3xl py-3 z-40 h-20 flex items-center justify-center`}>
+            <Image src={props.image} height={0} width={0} alt='ios logo' className={`${props.imageSize ? props.imageSize : 'w-auto h-auto'}`} quality={100} />
+        </button>
+        <motion.div
+          initial={{ y:-20 }}
+          animate={btnAnimation ? { y:0 } : {y: -20}}
+          transition={{ ease: "easeOut" }}
+          className={`absolute bg-nft-light border border-nft h-full w-full left-0 rounded-3xl top-5`}>
+        </motion.div>
+      </div>
     </div>
   )
 }
