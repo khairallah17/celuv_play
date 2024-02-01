@@ -35,6 +35,7 @@ const AnimatedText = ({
         >
             {text.split('').map((char, index) => (
                 <motion.span
+                    key={index}
                     className='inline-block'
                     variants={defaultAnimation}
                 >

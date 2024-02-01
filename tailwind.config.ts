@@ -43,15 +43,15 @@ const config: Config = {
         },
         ios: {
           DEFAULT: "#629EFF",
-          light: "#B2CFFF"
+          light: "#B2CFFF",
         },
         nft: {
           DEFAULT: "#00C9B8",
-          light: "#99E9E3"
+          light: "#99E9E3",
         },
         play: {
           DEFAULT: "#FF6383",
-          light: "#FFC1CD"
+          light: "#FFC1CD",
         }
       }
     },

@@ -4,6 +4,7 @@ import Image from 'next/image'
 import ProjectedButton from '../button'
 import { motion } from "framer-motion"
 import AnimatedText from '../animatedText'
+import Partners from '../partners'
 
 const ThemePark = () => {
   return (
@@ -72,8 +73,8 @@ const ThemePark = () => {
                         {/* <Image src={BtnBackground} fill sizes='100vw' quality={100} height={0} width={0} alt='btn background'/> */}
                         {/* <div className=' bg-phone bg-center bg-no-repeat bg-cover w-full h-full'></div> */}
                         <div className='flex items-center gap-4 mt-[-30px] ml-10'>
-                            <ProjectedButton className='absolute bg-ios-light border border-ios h-full w-full left-0 rounded-3xl top-5' imageSize='' addClass='mt-[-15px]' image='/ios.svg' color='ios'/>
-                            <ProjectedButton className='absolute bg-ios-light border border-ios h-full w-full left-0 rounded-3xl top-5' imageSize='' addClass='mt-[-15px]' image='/android.svg' color='ios'/>
+                            <ProjectedButton buttonClass="hover:bg-ios-light duration-200 bg-white border border-ios w-fit relative px-10 rounded-3xl py-3 z-40 h-20 flex items-center justify-center" className='absolute bg-ios-light border border-ios h-full w-full left-0 rounded-3xl top-5' imageSize='' addClass='' image='/ios.svg' color='ios'/>
+                            <ProjectedButton buttonClass="hover:bg-ios-light duration-200 bg-white border border-ios w-fit relative px-10 rounded-3xl py-3 z-40 h-20 flex items-center justify-center" className='absolute bg-ios-light border border-ios h-full w-full left-0 rounded-3xl top-5' imageSize='' addClass='' image='/android.svg' color='ios'/>
                         </div>
                     </div>
 
@@ -88,10 +89,10 @@ const ThemePark = () => {
                             <AnimatedText className='uppercase font-light text-white' text='marketplace'/>
                         </div>
                         <div className='flex flex-col items-start gap-6 mt-[-30px] ml-12'>
-                            <ProjectedButton className='absolute bg-nft-light border border-nft h-full w-full left-0 rounded-3xl top-5' imageSize='w-48' addClass='mt-[-20px]' image='/opensea.svg' color='nft'/>
+                            <ProjectedButton buttonClass="hover:bg-nft-light duration-200 bg-white border border-nft w-fit relative px-10 rounded-3xl py-3 z-40 h-20 flex items-center justify-center" className='absolute bg-nft-light border border-nft h-full w-full left-0 rounded-3xl top-5' imageSize='w-48' addClass='' image='/opensea.svg' color='nft'/>
                             <div className='flex items-center gap-3'>
-                                <ProjectedButton className='absolute bg-nft-light border border-nft h-full w-full left-0 rounded-3xl top-5' imageSize='w-56' addClass='mt-[-20px]' image='/oneplanet.svg' color='nft'/>
-                                <ProjectedButton className='absolute bg-nft-light border border-nft h-full w-full left-0 rounded-3xl top-5' imageSize='h-40 w-40' addClass='mt-[-20px]' image='/nerdimoodi.svg' color='nft' />
+                                <ProjectedButton buttonClass="hover:bg-nft-light duration-200 bg-white border border-nft w-fit relative px-10 rounded-3xl py-3 z-40 h-20 flex items-center justify-center" className='absolute bg-nft-light border border-nft h-full w-full left-0 rounded-3xl top-5' imageSize='w-56' addClass='' image='/oneplanet.svg' color='nft'/>
+                                <ProjectedButton buttonClass="hover:bg-nft-light duration-200 bg-white border border-nft w-fit relative px-10 rounded-3xl py-3 z-40 h-20 flex items-center justify-center" className='absolute bg-nft-light border border-nft h-full w-full left-0 rounded-3xl top-5' imageSize='h-40 w-40' addClass='' image='/nerdimoodi.svg' color='nft' />
                             </div>
                         </div>
                     </div>
@@ -106,7 +107,7 @@ const ThemePark = () => {
                             <AnimatedText className='uppercase font-light text-white' text='events'/>
                         </div>
                         <div className='self-center h-fit p-[50px]'>
-                            <ProjectedButton className='absolute bg-play-light border border-play h-full w-full left-0 rounded-3xl top-5' imageSize='' addClass='mt-[-15px]' image='/play_now.svg' color='play'/>
+                            <ProjectedButton buttonClass="hover:bg-play-light duration-200 bg-white border border-play w-fit relative px-10 rounded-3xl py-3 z-40 h-20 flex items-center justify-center" className='absolute bg-play-light border border-play h-full w-full left-0 rounded-3xl top-5' imageSize='' addClass='' image='/play_now.svg' color='play'/>
                         </div>
                     </div>
                 </div>
@@ -114,7 +115,7 @@ const ThemePark = () => {
 
             </motion.div>
 
-            <AnimatedText text='HELLO ZABI' />
+            <Partners/>
 
             <div>
                 <Image src="/CLOUD.svg" height={1080} width={1920} alt='clouds' quality={100} className='w-auto h-auto'/>
