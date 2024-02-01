@@ -76,7 +76,7 @@ import 'swiper/css/navigation';
 const Hero = () => {
 
   const [slideIndex, setSlideIndex] = useState<number>(0)
-  
+
   return (
     <header className='overflow-hidden'>
       <Navbar />

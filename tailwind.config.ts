@@ -18,6 +18,7 @@ const config: Config = {
         "linear-secondary": "linear-gradient(to bottom right, rgba(43, 193, 214, .50), rgba(4, 156, 190, .5))",
         "phone": "url(/astian_dapp.svg)",
         "nft-image": "url(/nft_world.svg)",
+        "play-image": "url(/play_now_bg.svg)",
         "slide1": "url(/site-banner-main.png)",
         "slide2": "url(/site-banner-1.png)",
       },
@@ -47,6 +48,10 @@ const config: Config = {
         nft: {
           DEFAULT: "#00C9B8",
           light: "#99E9E3"
+        },
+        play: {
+          DEFAULT: "#FF6383",
+          light: "#FFC1CD"
         }
       }
     },
