@@ -28,15 +28,17 @@ const AnimatedText = ({
     <Wrapper className={className}>
         <motion.span
             initial="hidden"
-            animate="visible"
+            whileInView="visible"
             transition={{
-                staggerChildren: 0.1
+                staggerChildren: 0.1,
+                delay: 2,
+                duration: 10
             }}
         >
             {text.split('').map((char, index) => (
                 <motion.span
                     key={index}
-                    className='inline-block'
+                    className='inline-block font-semibold'
                     variants={defaultAnimation}
                 >
                     {char}

@@ -1,9 +1,9 @@
 "use client"
 import React from 'react'
 import Image from 'next/image'
-import ProjectedButton from '../button'
+import ProjectedButton from '../../button'
 import { motion } from "framer-motion"
-import AnimatedText from '../animatedText'
+import AnimatedText from '../../animatedText'
 import Partners from '../partners'
 
 const ThemePark = () => {
@@ -11,9 +11,9 @@ const ThemePark = () => {
 
     <div className=''>
         <motion.div
-            // initial={{y:100, opacity: 0}}
-            // whileInView={{y:0, opacity: 1}}
-            // transition={{delay: 1, duration: 1}}
+            initial={{y:100, opacity: 0}}
+            whileInView={{y:0, opacity: 1}}
+            transition={{delay: .01, duration: 1}}
             className='container mx-auto mt-32 flex flex-col item-center gap-12 mb-10 z-[99] relative'>
 
             <h2 className='uppercase text-primary-light text-7xl font-bold text-center'>
@@ -34,11 +34,11 @@ const ThemePark = () => {
             <div className='absolute w-full h-[1000px] bg-gradient-to-b from-white to-transparent'></div>
 
             <motion.div
-            // initial={{y:100, opacity: 0}}
-            // whileInView={{y:0, opacity: 1}} 
-            // transition={{delay: 1, duration: 1}}
+            initial={{y:100, opacity: 0}}
+            whileInView={{y:0, opacity: 1}} 
+            transition={{delay: .01, duration: 1}}
             className="container mx-auto flex flex-col item-center gap-12 mb-10 z-[99] relative">
-                <h2 className='uppercase text-primary-light text-7xl font-bold text-center'>
+                <h2 className='uppercase text-primary-light text-5xl font-bold text-center mt-10'>
                     vision & goal
                 </h2>
 
@@ -61,10 +61,10 @@ const ThemePark = () => {
             </motion.div>
 
             <motion.div
-            // initial={{y:100, opacity: 0}}
-            // whileInView={{y:0, opacity: 1}}
-            // transition={{delay: 1, duration: 1}}
-            className='container mx-auto flex lg:items-center items-start justify-center lg:flex-row flex-col gap-4 overflow-visible my-56'>
+            initial={{y:100, opacity: 0}}
+            whileInView={{y:0, opacity: 1}}
+            transition={{delay: .01, duration: 1}}
+            className='container mx-auto flex lg:items-center items-start justify-center lg:flex-row flex-col gap-4 overflow-visible my-56 z-50 relative'>
                 
                 <div>
                     
@@ -72,7 +72,7 @@ const ThemePark = () => {
                         
                         {/* <Image src={BtnBackground} fill sizes='100vw' quality={100} height={0} width={0} alt='btn background'/> */}
                         {/* <div className=' bg-phone bg-center bg-no-repeat bg-cover w-full h-full'></div> */}
-                        <div className='flex items-center gap-4 mt-[-30px] ml-10'>
+                        <div className='flex items-center gap-4 mb-11 ml-10'>
                             <ProjectedButton buttonClass="hover:bg-ios-light duration-200 bg-white border border-ios w-fit relative px-10 rounded-3xl py-3 z-40 h-20 flex items-center justify-center" className='absolute bg-ios-light border border-ios h-full w-full left-0 rounded-3xl top-5' imageSize='' addClass='' image='/ios.svg' color='ios'/>
                             <ProjectedButton buttonClass="hover:bg-ios-light duration-200 bg-white border border-ios w-fit relative px-10 rounded-3xl py-3 z-40 h-20 flex items-center justify-center" className='absolute bg-ios-light border border-ios h-full w-full left-0 rounded-3xl top-5' imageSize='' addClass='' image='/android.svg' color='ios'/>
                         </div>
@@ -88,7 +88,7 @@ const ThemePark = () => {
                         <div className="absolute top-[93%] left-[16.5%]">
                             <AnimatedText className='uppercase font-light text-white' text='marketplace'/>
                         </div>
-                        <div className='flex flex-col items-start gap-6 mt-[-30px] ml-12'>
+                        <div className='flex flex-col items-start gap-6 mb-11 ml-12'>
                             <ProjectedButton buttonClass="hover:bg-nft-light duration-200 bg-white border border-nft w-fit relative px-10 rounded-3xl py-3 z-40 h-20 flex items-center justify-center" className='absolute bg-nft-light border border-nft h-full w-full left-0 rounded-3xl top-5' imageSize='w-48' addClass='' image='/opensea.svg' color='nft'/>
                             <div className='flex items-center gap-3'>
                                 <ProjectedButton buttonClass="hover:bg-nft-light duration-200 bg-white border border-nft w-fit relative px-10 rounded-3xl py-3 z-40 h-20 flex items-center justify-center" className='absolute bg-nft-light border border-nft h-full w-full left-0 rounded-3xl top-5' imageSize='w-56' addClass='' image='/oneplanet.svg' color='nft'/>
@@ -115,9 +115,12 @@ const ThemePark = () => {
 
             </motion.div>
 
+
             <Partners/>
 
-            <div>
+            <div className='absolute bottom-0 w-full h-[400px] bg-gradient-to-b to-white from-transparent'></div>
+
+            <div className='absolute z-10 top-1/3'>
                 <Image src="/CLOUD.svg" height={1080} width={1920} alt='clouds' quality={100} className='w-auto h-auto'/>
             </div>
         </div>

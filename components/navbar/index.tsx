@@ -7,7 +7,7 @@ import { useAnimate } from 'framer-motion'
 
 const Navbar = () => {
 
-    const menu = ["about us", "our product"]
+    const menu = [{text: "about us", link: "/"}, {text: "our product", link: "/product"}]
     const [showMenu, setShowMenu] = useState<boolean>(false)
     const [mobileMenu, animateMobileMenu] = useAnimate()
 
@@ -17,10 +17,10 @@ const Navbar = () => {
                 <Image src="celuv_logo.svg" width={0} height={0} quality={100} alt='celuv logo' className='w-auto h-auto'/>
                 <ul className='list-none hidden lg:flex-row flex-col items-center gap-6 lg:flex'>
                     {
-                        menu.map((item) => (
-                            <li key={item}>
-                                <Link className='text-primary uppercase tracking-widest hover:drop-shadow-primary hover:font-bold duration-200 font-light' href="/product">
-                                    {item}
+                        menu.map((item,index) => (
+                            <li key={index}>
+                                <Link className='text-primary uppercase tracking-widest hover:drop-shadow-primary hover:font-bold duration-200 font-light' href={`${item.link}`}>
+                                    {item.text}
                                 </Link>
                             </li>
                         ))
@@ -31,7 +31,7 @@ const Navbar = () => {
                 </Link>
                     <motion.ul
                         layout
-                        className='flex lg:hidden flex-col absolute bg-white top-[101%] left-0 w-full z-50'>
+                        className='flex lg:hidden flex-col absolute bg-white top-[101%] left-0 w-full z-[100]'>
                             <motion.li
                                 animate={{ opacity: 1 }}
                                 transition={{ delay: 1/3 }}
@@ -47,11 +47,11 @@ const Navbar = () => {
                                 <motion.li 
                                     animate={{ opacity: 1 }}
                                     transition={{ delay: (Number(index) + 2)/3 }}
-                                    key={item}
+                                    key={index}
                                     className='w-full px-4 py-4 border-b-[1px] border-primary opacity-0'>
-                                    <Link className='text-primary uppercase tracking-widest hover:drop-shadow-primary hover:font-bold duration-200 font-light' href="/product">
+                                    <Link className='text-primary uppercase tracking-widest hover:drop-shadow-primary hover:font-bold duration-200 font-light' href={`${item.link}`}>
                                         <p className='container mx-auto'>
-                                            {item}
+                                            {item.text}
                                         </p>
                                     </Link>
                                 </motion.li>

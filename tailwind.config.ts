@@ -21,9 +21,12 @@ const config: Config = {
         "play-image": "url(/play_now_bg.svg)",
         "slide1": "url(/site-banner-main.png)",
         "slide2": "url(/site-banner-1.png)",
+        "roadmap": "url(/roadmap.png)"
       },
       dropShadow: {
-        "primary": "0px 3px 8px rgba(2, 156, 190, 0.5)",
+        "primary-sh": "0px 3px 8px rgba(2, 156, 190, 0.5)",
+        "card-sh" : "0px 30px 15px rgba(2, 156, 190, 0.2)",
+        "astian-sh": "0px 5px 15px rgba(98, 158, 255, 0.3)"
       },
       boxShadow: {
         "secondary": "0px 5px 20px rgba(0, 201, 184, 0.25)",
@@ -33,7 +36,8 @@ const config: Config = {
         primary: {
           DEFAULT: "#029BBD",
           light: "#2BC1D6",
-          dark: "#049CBE"
+          dark: "#049CBE",
+          lighter: "#9AD7E5"
         },
         secondary: {
           DEFAULT: "#00C9B8"
@@ -52,6 +56,12 @@ const config: Config = {
         play: {
           DEFAULT: "#FF6383",
           light: "#FFC1CD",
+        },
+        astian: {
+          DEFAULT: "#629EFF",
+          light: "#A1C4E8",
+          lighter: "#D0E2FF",
+          dark: "#102870"
         }
       }
     },

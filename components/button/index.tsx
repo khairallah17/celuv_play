@@ -22,11 +22,11 @@ const ProjectedButton = (props: BtnProps) => {
   return (
     <div className='h-[80px]'>
       <div className={`relative w-fit duration-200 ${btnAnimation && props.addClass}`}>
-        <button  className={props.buttonClass + " active:translate-y-[-15px]"}>
+        <button  className={props.buttonClass + " active:translate-y-[20px]"}>
             <Image src={props.image} height={0} width={0} alt='ios logo' className={`${props.imageSize ? props.imageSize : 'w-auto h-auto'}`} quality={100} />
         </button>
         <motion.div
-          initial={{ y:-20 }}
+          initial={{ y:0 }}
           // animate={btnAnimation ? { y:-20 } : {y: 0}}
           transition={{ ease: "easeOut" }}
           className={props.className}>

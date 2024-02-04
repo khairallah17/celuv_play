@@ -1,6 +1,6 @@
 "use client"
 import React, { useEffect, useRef, useState } from 'react'
-import Navbar from '../navbar'
+import Navbar from '../../navbar'
 import { motion, useMotionValue } from "framer-motion"
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
