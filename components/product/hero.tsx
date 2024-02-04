@@ -38,10 +38,6 @@ const Hero = () => {
                 <p className='uppercase text-xl text-astian'>simple and easy interface</p>
                 <p className='uppercase text-xl text-astian'>dashboard</p>
             </div>
-
-            <div className="flex items-center justify-center">
-                <ProjectedGameWBtn title='nft_game' subtitle='collection / mining staking / mounting' image='nft_game_img' btnClass='' btnClass2='' cta='nft_btn' />
-            </div>
     
         </div>
 

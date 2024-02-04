@@ -26,11 +26,16 @@ const config: Config = {
       dropShadow: {
         "primary-sh": "0px 3px 8px rgba(2, 156, 190, 0.5)",
         "card-sh" : "0px 30px 15px rgba(2, 156, 190, 0.2)",
-        "astian-sh": "0px 5px 15px rgba(98, 158, 255, 0.3)"
+        "astian-sh": "0px 5px 15px rgba(98, 158, 255, 0.3)",
+        "game-bx": "0px 20px 20px rgba(98, 158, 255, 0.32"
       },
       boxShadow: {
         "secondary": "0px 5px 20px rgba(0, 201, 184, 0.25)",
         "ios-button": "0px 19px 0px 0px rgba(178, 207, 255, 1)",
+      },
+      borderRadius: {
+        "btn": "30px",
+        "x-btn": "40px"
       },
       colors: {
         primary: {
@@ -59,6 +64,7 @@ const config: Config = {
         },
         astian: {
           DEFAULT: "#629EFF",
+          normal: "#C0D8FF",
           light: "#A1C4E8",
           lighter: "#D0E2FF",
           dark: "#102870"
