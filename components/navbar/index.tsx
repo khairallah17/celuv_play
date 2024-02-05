@@ -14,7 +14,9 @@ const Navbar = () => {
     return (
         <div className='border-b-[1px] border-primary border-opacity-50 relative'>
             <nav className='container mx-auto flex w-full justify-between items-center py-6 border-bottom border-primary'>
-                <Image src="celuv_logo.svg" width={0} height={0} quality={100} alt='celuv logo' className='w-auto h-auto'/>
+                <Link href="/">
+                    <Image src="celuv_logo.svg" width={0} height={0} quality={100} alt='celuv logo' className='w-auto h-auto'/>
+                </Link>
                 <ul className='list-none hidden lg:flex-row flex-col items-center gap-6 lg:flex'>
                     {
                         menu.map((item,index) => (

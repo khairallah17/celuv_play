@@ -35,7 +35,7 @@ const AnimatedText = ({
                 duration: 10
             }}
         >
-            {text.split('').map((char, index) => (
+            {text.split("").map((char, index) => (
                 <motion.span
                     key={index}
                     className='inline-block font-semibold'

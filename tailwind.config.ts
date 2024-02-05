@@ -21,7 +21,8 @@ const config: Config = {
         "play-image": "url(/play_now_bg.svg)",
         "slide1": "url(/site-banner-main.png)",
         "slide2": "url(/site-banner-1.png)",
-        "roadmap": "url(/roadmap.png)"
+        "roadmap": "url(/roadmap.png)",
+        "games": "url(/games_bg.svg)"
       },
       dropShadow: {
         "primary-sh": "0px 3px 8px rgba(2, 156, 190, 0.5)",
@@ -45,7 +46,8 @@ const config: Config = {
           lighter: "#9AD7E5"
         },
         secondary: {
-          DEFAULT: "#00C9B8"
+          DEFAULT: "#00C9B8",
+          light: "#00c9b852"
         },
         third: {
           DEFAULT: "#102870"
