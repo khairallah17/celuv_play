@@ -24,7 +24,7 @@ const ProjectedTeam = (props:Team) => {
     }
 
     return (
-        <div className='flip-card h-80 w-auto aspect-square bg-primary-lighter border border-primary rounded-3xl drop-shadow-primary-sh duration-200 hover:-translate-y-2' onClick={handleFlip}>
+        <div className='flip-card w-[120px] h-[131px] lg:h-80 lg:w-auto aspect-square bg-primary-lighter border border-primary rounded-3xl drop-shadow-primary-sh duration-200 hover:-translate-y-2' onClick={handleFlip}>
             <motion.div
                 initial={false}
                 animate={{

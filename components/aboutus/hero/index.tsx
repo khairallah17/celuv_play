@@ -12,67 +12,6 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 
-
-// const Images = () => {
-//   const [currentIndex, setCurrentIndex] = useState(0);
-
-//   // Function to go to the next image
-//   const nextImage = () => {
-//     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-//   };
-
-//   // Function to go to the previous image
-//   const prevImage = () => {
-//     setCurrentIndex((prevIndex) =>
-//       prevIndex === 0 ? images.length - 1 : prevIndex - 1
-//     );
-//   };
-
-//   // Framer Motion variants for animation
-//   const variants = {
-//     enter: (direction) => {
-//       return {
-//         x: direction > 0 ? 1000 : -1000,
-//         opacity: 0,
-//       };
-//     },
-//     center: {
-//       zIndex: 1,
-//       x: 0,
-//       opacity: 1,
-//     },
-//     exit: (direction) => {
-//       return {
-//         zIndex: 0,
-//         x: direction < 0 ? 1000 : -1000,
-//         opacity: 0,
-//       };
-//     },
-//   };
-
-//   return (
-//     <div>
-//       <AnimatePresence initial={false} custom={1}>
-//         <motion.img
-//           key={currentIndex}
-//           src={images[currentIndex]}
-//           custom={1}
-//           variants={variants}
-//           initial="enter"
-//           animate="center"
-//           exit="exit"
-//           transition={{
-//             x: { type: 'spring', stiffness: 300, damping: 30 },
-//             opacity: { duration: 0.2 },
-//           }}
-//         />
-//       </AnimatePresence>
-//       <button onClick={prevImage}>Previous</button>
-//       <button onClick={nextImage}>Next</button>
-//     </div>
-//   );
-// }
-
 const Hero = () => {
 
   const [slideIndex, setSlideIndex] = useState<number>(0)
@@ -93,7 +32,7 @@ const Hero = () => {
               ease: "easeInOut",
               duration: 1,
             }}
-            className='bg-slide1 bg-cover bg-center h-[700px] w-full shrink-0'></motion.div>
+            className='bg-slide1 bg-cover bg-right-top lg:bg-center h-[700px] w-full shrink-0'></motion.div>
             <motion.div
             animate={{
               width: slideIndex == 1 ? "100%" : 0
@@ -102,16 +41,16 @@ const Hero = () => {
               ease: "easeInOut",
               duration: 1,
             }}
-            className='bg-slide2 bg-cover bg-center h-[700px] w-full shrink-0'></motion.div>
+            className='bg-slide2 bg-cover bg-right-top lg:bg-center h-[700px] w-full shrink-0'></motion.div>
             
             <div className='h-full w-full absolute bg-black top-0 z-20 bg-opacity-20 flex p-10 justify-end flex-col'>
-              <h3 className='uppercase text-3xl font-bold text-white'>
+              <h3 className='uppercase lg:flex hidden text-3xl font-bold text-white'>
                 dismatling the barier
               </h3>
-              <p className='uppercase text-3xl text-white mb-10'>
+              <p className='uppercase lg:flex hidden text-3xl text-white mb-10'>
                 seamless integration to daily life
               </p>
-              <h1 className='uppercase text-7xl font-bold text-white'>
+              <h1 className='uppercase lg:flex hidden text-7xl font-bold text-white'>
                 web 3 theme park <br /> defi infrastructure
               </h1>
             </div>

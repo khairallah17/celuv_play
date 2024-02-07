@@ -6,7 +6,8 @@ import "./style.css"
 
 type Team = {
     image1: string,
-    image2: string
+    image2: string,
+    nameSize?: string
 }
 const ProjectedGame = (props: Team) => {
     const [isFliped, setIsFliped] = useState<boolean>(false)
@@ -48,7 +49,7 @@ const ProjectedGame = (props: Team) => {
                             animate={{opacity: !isFliped ? 1 : 0}}
                             transition={{delay: !isFliped ? 0.4 : 0}}
                         >
-                            <Image fill src={`/${props.image2}.svg`} alt='' quality={100} className='p-10 bg-cover bg-center' />
+                            <Image height={0} width={0} src={`/${props.image2}.svg`} alt='' quality={100} className={`${props.nameSize}`} />
                         </motion.div>
                     </div>
             </motion.div>

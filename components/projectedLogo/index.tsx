@@ -13,6 +13,7 @@ const ProjectedLogo = (props: Props) => {
         <motion.div
         initial={{opacity: 0, y: 20}}
         whileInView={{opacity: 1, y: 0}}
+        viewport={{once: true}}
         transition={{
             ease: "easeInOut",
             delay: props.delay/10
@@ -20,12 +21,13 @@ const ProjectedLogo = (props: Props) => {
         >
             <motion.div
             initial={{paddingBottom: 4}}
-            whileInView={{paddingBottom: props.projected ? 40 : 4}}
+            whileInView={{paddingBottom: props.projected ? 10 : 2}}
+            viewport={{once: true}}
             transition={{
                 delay: props.delay/5
             }}
-            className={`bg-primary ${props.projected ? "h-40 aspect-[2.32] w-auto" : "h-32 w-[371.2px]"}  rounded-3xl pt-1 px-1 pb-1`}>
-                <div className="bg-primary-light  w-full h-full rounded-[20px] flex items-center justify-center">
+            className={`bg-[#029CBE] w-full h-fit rounded-[7px] lg:rounded-3xl pb-[1px] p-[2px]`}>
+                <div className="bg-[#83CEDF] w-full lg:h-[120px] h-[34px] lg:rounded-[20px] rounded-[5px] flex items-center justify-center p-4">
                     <Image src={`${props.logo}`} height={0} width={0} className='h-auto w-auto' alt='' />
                 </div>
             </motion.div>

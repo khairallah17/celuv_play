@@ -17,25 +17,25 @@ const Footer = () => {
     <div className='border border-t-primary-lighter'>
         <div className='container mx-auto py-10 flex flex-col gap-4'>
 
-            <div className='flex items-center justify-between'>
+            <div className='flex items-center justify-between flex-wrap'>
 
-                <div className='flex items-center gap-6'>
+                <div className='lg:flex hidden items-center gap-6'>
                     <Image height={0} width={0} className='h-auto w-auto' alt='logo' src="/celuv_logo.svg"/>
                     <p className='text-primary font-normal tracking-widest'>&copy; 2024 All rights reserverd to CeluvPlay</p>
                 </div>
 
-                <div className='flex items-center gap-4'>
-                    <Link target='_blank' className='text-primary hover:font-bold duration-200 font-semibold text-lg uppercase tracking-wider' href="/">
+                <div className='flex items-center gap-4 flex-wrap lg:w-auto w-full'>
+                    <Link target='_blank' className='text-primary hover:font-bold duration-200 font-semibold text-lg lg:w-auto w-full lg:text-left text-center uppercase tracking-wider' href="/">
                         about us
                     </Link>
-                    <Link target='_blank' className='text-primary hover:font-bold duration-200 font-semibold text-lg uppercase tracking-wider' href="/product">
+                    <Link target='_blank' className='text-primary hover:font-bold duration-200 font-semibold text-lg lg:w-auto w-full lg:text-left text-center uppercase tracking-wider' href="/product">
                         our product
                     </Link>
                 </div>
 
             </div>
 
-            <div className='flex items-center justify-between'>
+            <div className='flex lg:flex-row flex-col-reverse gap-y-24 items-center justify-between flex-wrap'>
                 <div className='flex items-center gap-4'>
                     {
                         socials.map((item, index) => (
@@ -49,6 +49,11 @@ const Footer = () => {
                 <button className='bg-secondary bg-opacity-15 hover:bg-transparent text-secondary rounded-lg uppercase font-normal hover:border-2 hover:border-secondary border-2 border-transparent duration-200 px-6 py-2'>
                     whitepaper
                 </button>
+            </div>
+
+            <div className='flex lg:hidden flex-wrap flex-col items-center gap-6 mt-20'>
+                <Image height={0} width={0} className='h-auto w-auto' alt='logo' src="/mobile-logo.svg"/>
+                <p className='text-primary font-normal tracking-widest'>&copy; 2024 All rights reserverd to CeluvPlay</p>
             </div>
 
         </div>

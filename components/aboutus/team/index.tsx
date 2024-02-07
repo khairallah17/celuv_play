@@ -22,10 +22,11 @@ const Team = () => {
         initial={{y:100, opacity: 0}}
         whileInView={{y:0, opacity: 1}} 
         transition={{delay: .01, duration: 1}}
-        className='container mx-auto my-20'>
-            <h2 className='text-6xl font-bold text-center uppercase text-primary'>our team</h2>
+        viewport={{once: true}}
+        className='container mx-auto my-20 lg:px-0 px-10'>
+            <h2 className='lg:text-6xl text-4xl font-bold text-center uppercase text-primary'>our team</h2>
 
-            <div className=' mt-20 flex items-center justify-between flex-wrap gap-y-10'>
+            <div className='mt-10 lg:mt-20 flex items-center justify-between flex-wrap gap-y-10'>
                 <div className='flex items-center justify-around w-full h-full flex-wrap gap-4'>
                     {
                         team1.map((item, index) => (

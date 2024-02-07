@@ -20,8 +20,8 @@ const ProjectedButton = (props: BtnProps) => {
   const stopAnimate = () => setBtnAnimation(false)
 
   return (
-    <div className='h-[80px]'>
-      <div className={`relative w-fit duration-200 ${btnAnimation && props.addClass}`}>
+    <div className='h-full w-full'>
+      <div className={`relative duration-200 h-full ${props.addClass}`}>
         <button  className={props.buttonClass + " active:translate-y-[20px]"}>
             <Image src={props.image} height={0} width={0} alt='ios logo' className={`${props.imageSize ? props.imageSize : 'w-auto h-auto'}`} quality={100} />
         </button>

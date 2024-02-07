@@ -28,6 +28,7 @@ const RoadMap = () => {
         initial={{y:100, opacity: 0}}
         whileInView={{y:0, opacity: 1}} 
         transition={{delay: .1, duration: 1}}
+        viewport={{once: true}}
         className='py-52 relative w-full overflow-hidden'>
 
             <div className='bg-cover bg-center bg-roadmap w-full z-[-1] h-full absolute top-56 '>
@@ -35,10 +36,10 @@ const RoadMap = () => {
             </div>
 
             <div className='container mx-auto'>
-                <h2 className='font-bold text-primary text-center text-6xl uppercase'>roadmap</h2>
+                <h2 className='font-bold text-primary text-center text-4xl lg:text-6xl uppercase'>roadmap</h2>
 
                 <div
-                className="flex items-cente justify-center flex-wrap gap-y-10 mt-20">
+                className="flex items-cente justify-center flex-wrap gap-y-10 mt-20 px-10">
                     <div ref={ref1} className='inline-block'>
                         <Image src="/1Q.svg" height={0} width={0} className='grow-0 w-auto h-auto drop-shadow-card-sh' alt='q1' />
                     </div>
