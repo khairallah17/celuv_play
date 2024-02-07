@@ -9,8 +9,8 @@ const TokenOmic = () => {
         <div className='absolute top-32 left-0 w-full h-full bg-gradient-to-b from-white to-transparent -z-10'></div>
         <div className='container mx-auto flex items-center justify-center flex-col gap-4 pb-52'>
             <Image src="/tokenomics_logo.svg" height={0} width={0} alt='' className='w-auto h-auto' />
-            <h2 className='text-secondary font-bold text-7xl uppercase'>tokenomics</h2>
-            <ul className='text-third text-opacity-70 text-center flex flex-col gap-1 text-lg font-normal'>
+            <h2 className='text-secondary font-bold text-4xl lg:text-7xl uppercase'>tokenomics</h2>
+            <ul className='text-third text-opacity-70 text-center flex flex-col gap-1 text-sm lg:px-0 px-4 lg:text-lg font-normal'>
                 <li>CELA, CELB are digital assets built on the Polygon-Network,</li>
                 <li>circulating our ecosystem.</li>
                 <li>They can be obtained thorough contributions</li>
@@ -23,8 +23,9 @@ const TokenOmic = () => {
             </h2>
 
             <div className='relative h-full flex items-center justify-center w-fit mb-10'>
-                <Image src="/ecosystem_68.svg" height={0} width={0} alt='' className='w-auto h-auto' />
-                <div className=''>
+                {/* <Image fill src="/ecosystem_68.svg" height={0} width={0} alt='' className='w-auto h-auto' /> */}
+                <div className='bg-ecosystem-68-mobile lg:bg-ecosystem-68 bg-cover bg-center'></div>
+                <div className='lg:flex hidden'>
                     <AnimatedText className='text-secondary absolute -left-32 top-16' el='p' text='NFT Marketplace' />
                     <ul className='text-secondary absolute -left-28 top-32'>
                         <AnimatedText className='text-secondary font-light' el='li' text='NFT Mining' />
@@ -32,7 +33,7 @@ const TokenOmic = () => {
                         <AnimatedText className='text-secondary font-light' el='li' text='NFT Mouting' />
                     </ul>
                 </div>
-                <div className=''>
+                <div className='lg:flex hidden'>
                     <ul className='absolute top-60 gap-[2px] left-12 flex flex-col items-start text-start'>
                         <AnimatedText className='text-secondary font-light capitalize text-start' el='li' text='swap pool LP incentive 10.2' />
                         <AnimatedText className='text-secondary font-light capitalize text-start' el='li' text='operation and partners 9.2' />
@@ -41,7 +42,7 @@ const TokenOmic = () => {
                         <AnimatedText className='text-secondary font-light capitalize text-start' el='li' text='first pool 0.02' />
                     </ul>
                 </div>
-                <div className=''>
+                <div className='lg:flex hidden'>
                     <ul className='absolute top-6 gap-[55px] -right-40 flex flex-col items-start text-start'>
                         <AnimatedText className='text-secondary font-light capitalize text-start' el='li' text='DeFi DAO Governance' />
                         <AnimatedText className='text-secondary font-light capitalize text-start' el='li' text='DApp Currency' />
@@ -57,14 +58,14 @@ const TokenOmic = () => {
 
             <div className='relative h-full flex items-center justify-center w-fit mb-10'>
                 <Image src="/ecosystem_50.svg" height={0} width={0} alt='' className='w-auto h-auto' />
-                <div className=''>
+                <div className='lg:flex hidden'>
                     <ul className='text-secondary absolute -left-40 gap-12 flex flex-col items-start top-2'>
                         <AnimatedText className='text-secondary font-light' el='li' text='DApp Currency' />
                         <AnimatedText className='text-secondary font-light' el='li' text='Partner Platform Currency' />
                         <AnimatedText className='text-secondary font-light' el='li' text='Crypto Swap' />
                     </ul>
                 </div>
-                <div className=''>
+                <div className='lg:flex hidden'>
                     <ul className='absolute w-full top-0 left-0'>
                         <AnimatedText className='absolute text-secondary font-light capitalize text-start top-[215px] gap-1 left-20' el='li' text='Private Sale 15' />
                         <AnimatedText className='absolute text-secondary font-light capitalize text-start top-[243px] gap-1 left-20' el='li' text='Marketing 9' />
@@ -76,7 +77,7 @@ const TokenOmic = () => {
                         <AnimatedText className='absolute text-secondary font-light capitalize text-start top-[400px] gap-1 left-20' el='li' text='IDO & Public 1' />
                     </ul>
                 </div>
-                <div className=''>
+                <div className='lg:flex hidden'>
                     <ul className='absolute top-0 left-0 w-full'>
                         <AnimatedText className='text-secondary font-light capitalize text-start absolute left-[102%] top-10 w-full' el='li' text='CEX Listing' />
                         <AnimatedText className='text-secondary font-light capitalize text-start absolute left-[102%] top-32 w-full' el='li' text='Exclusive AirDrop' />

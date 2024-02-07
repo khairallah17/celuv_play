@@ -22,7 +22,13 @@ const config: Config = {
         "slide1": "url(/site-banner-main.png)",
         "slide2": "url(/site-banner-1.png)",
         "roadmap": "url(/roadmap.png)",
-        "games": "url(/games_bg.svg)"
+        "games": "url(/games_bg.svg)",
+        "games_left": "url(/games_bg_left.svg)",
+        "games_right": "url(/games_bg_right.svg)",
+        "ecosystem-68": "url(/ecosystem_68.svg)",
+        "ecosystem-68-mobile": "url(/ecosystem_68_mobile.svg)",
+        "ecosystem-50": "url(/ecosystem_50.svg)",
+        "ecosystem-50-mobile": "url(/ecosystem_50_mobile.svg)"
       },
       dropShadow: {
         "primary-sh": "0px 3px 8px rgba(2, 156, 190, 0.5)",
