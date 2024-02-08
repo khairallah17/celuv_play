@@ -12,7 +12,7 @@ const Navbar = () => {
     const [mobileMenu, animateMobileMenu] = useAnimate()
 
     return (
-        <div className='border-b-[1px] border-primary border-opacity-50 relative'>
+        <div className='border-b-[1px] border-primary border-opacity-50 relative lg:px-0 px-5'>
             <nav className='container mx-auto flex w-full justify-between items-center py-6 border-bottom border-primary'>
                 <Link href="/">
                     <Image src="celuv_logo.svg" width={0} height={0} quality={100} alt='celuv logo' className='w-auto h-auto'/>
@@ -28,7 +28,7 @@ const Navbar = () => {
                         ))
                     }
                 </ul>
-                <Link href="/whitepaper" className='uppercase lg:flex hidden tracking-wider hover:shadow-secondary duration-200 text-secondary border-[1px] border-secondary font-light px-4 py-2 rounded-md'>
+                {/* <Link href="/whitepaper" className='uppercase lg:flex hidden tracking-wider hover:shadow-secondary duration-200 text-secondary border-[1px] border-secondary font-light px-4 py-2 rounded-md'>
                     whitepaper
                 </Link>
                     <motion.ul
@@ -59,7 +59,7 @@ const Navbar = () => {
                                 </motion.li>
                             ))
                         }
-                    </motion.ul>
+                    </motion.ul> */}
             </nav>
         </div>
     )
