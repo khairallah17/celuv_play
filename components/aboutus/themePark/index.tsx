@@ -67,7 +67,7 @@ const ThemePark = () => {
             whileInView={{y:0, opacity: 1}}
             transition={{delay: .01, duration: 1}}
             viewport={{once: true}}
-            className='container mx-auto flex lg:items-center items-start justify-center lg:flex-row flex-col gap-4 overflow-visible my-20 lg:my-56 z-50 relative'>
+            className='container mx-auto flex lg:items-center overflow-hidden items-start justify-center lg:flex-row flex-col gap-4 my-20 lg:my-56 z-50 relative'>
                 
                 <div>
                     

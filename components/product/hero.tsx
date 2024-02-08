@@ -55,7 +55,7 @@ const Hero = () => {
             initial={{opacity: 0, y: 30}}
             viewport={{once: true}}
             transition={{delay: .05, duration: .3}}
-            className='grid lg:grid-cols-4 grid-cols-2 lg:grid-rows-1 grid-rows-1 gap-2 lg:gap-6 mt-16 flex-wrap lg:px-0 px-5'>
+            className='grid lg:grid-cols-4 grid-cols-2 lg:grid-rows-1 grid-rows-1 gap-2 lg:gap-6 mt-16 items-center justify-center lg:px-0 px-5'>
                 <ProjectedGame image1='nft_product' image2='nft_name' nameSize="h-[52px] w-[155px]" />
                 <ProjectedGame image1='game_product' image2='game_name' nameSize="h-[43px] w-[174px]" />
                 <ProjectedGame image1='ipuniverse_product' image2='ipuniverse_name' nameSize="h-[63px] w-[181px]" />

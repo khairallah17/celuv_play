@@ -26,7 +26,7 @@ const ProjectedLogo = (props: Props) => {
             transition={{
                 delay: props.delay/5
             }}
-            className={`bg-[#029CBE] w-full h-fit rounded-[7px] lg:rounded-3xl pb-[1px] p-[2px]`}>
+            className={`bg-[#029CBE] w-full h-fit rounded-[10px] lg:rounded-3xl pb-[1px] p-[2px]`}>
                 <div className="bg-[#83CEDF] w-full lg:h-[120px] h-[34px] lg:rounded-[20px] rounded-[5px] flex items-center justify-center p-4">
                     <Image src={`${props.logo}`} height={0} width={0} className='h-auto w-auto' alt='' />
                 </div>
