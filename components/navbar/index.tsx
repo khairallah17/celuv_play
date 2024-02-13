@@ -32,7 +32,7 @@ const Navbar = () => {
                         ))
                     }
                 </ul>
-                <HiBars2 onClick={() => setShowMenu(!showMenu)} height={60} width={60} className='text-primary-dark flex lg:hidden opacity-50 h-8 w-8 border-[1px] border-primary-dark px-1 rounded-md'/>
+                <HiBars2 onClick={() => setShowMenu(!showMenu)} height={60} width={60} className='text-primary-dark cursor-pointer flex lg:hidden opacity-50 h-8 w-8 border-[1px] border-primary-dark px-1 rounded-md'/>
                 <Link href="/whitepaper" className='uppercase lg:flex hidden tracking-wider hover:shadow-secondary duration-200 text-secondary border-[1px] border-secondary font-light px-4 py-2 rounded-xl'>
                     whitepaper
                 </Link>
@@ -42,8 +42,8 @@ const Navbar = () => {
                             <motion.li
                                 animate={{ opacity: showMenu ? 1 : 0 }}
                                 transition={{ delay: 1/3 }}
-                                className={`w-full px-4 py-4 ${showMenu ? "flex" : "hidden"} border-b-[1px] border-secondary opacity-0`}>
-                                <Link href="/whitepaper" className='text-secondary uppercase tracking-widest hover:shadow-secondary hover:font-bold duration-200 font-light'>
+                                className={`w-full px-4 py-4 ${showMenu ? "flex" : "hidden"} justify-end border-b-[1px] border-secondary opacity-0`}>
+                                <Link href="/whitepaper" className='text-secondary w-full uppercase tracking-widest font-light'>
                                     <p className='container mx-auto text-right'>
                                         whitepaper
                                     </p>
@@ -55,9 +55,9 @@ const Navbar = () => {
                                     animate={{ opacity: showMenu ? 1 : 0 }}
                                     transition={{ delay: (Number(index) + 2)/3 }}
                                     key={index}
-                                    className={`w-full px-4 py-4 ${showMenu ? "flex" : "hidden"} border-b-[1px] border-primary opacity-0`}>
-                                    <Link className='text-primary uppercase tracking-widest hover:drop-shadow-primary hover:font-bold duration-200 font-light' href={`${item.link}`}>
-                                        <p className='container mx-auto text-right'>
+                                    className={`w-full px-4 py-4 text-right ${showMenu ? "flex" : "hidden"} justify-end border-b-[1px] border-primary opacity-0`}>
+                                    <Link className='text-primary uppercase w-full tracking-widest hover:drop-shadow-primary hover:font-bold duration-200 font-light' href={`${item.link}`}>
+                                        <p className=''>
                                             {item.text}
                                         </p>
                                     </Link>
