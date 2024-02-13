@@ -35,8 +35,8 @@ const ProjectedTeam = (props:Team) => {
             ease: "easeInOut"
         }}
         onAnimationComplete={() => setIsAnimating(false)}
-        className='flip-card w-[120px] h-[131px] lg:h-[230.82px] lg:w-[212.35px] aspect-square bg-primary-lighter border border-primary rounded-3xl drop-shadow-primary-sh duration-200 hover:-translate-y-2 flex' onClick={handleFlip}>
-        <div className={`flip-card-front bg-cover bg-center w-full h-[80%] p-10 rounded-3xl ${!isFliped ? "bg-primary" : "transparent"} durantion-700`}>
+        className='flip-card w-[120px] relative z-[99] h-[131px] lg:h-[230.82px] lg:w-[212.35px] aspect-square bg-primary-lighter border border-primary rounded-3xl drop-shadow-primary-sh duration-200 hover:-translate-y-2 flex' onClick={handleFlip}>
+        <div className={`flip-card-front bg-cover bg-center w-full h-[90%] p-10 rounded-3xl ${!isFliped ? "bg-primary" : "transparent"} durantion-700`}>
             <motion.div
                 initial={{opacity: 1}}
                 animate={{opacity: !isFliped ? 1 : 0}}
@@ -49,7 +49,7 @@ const ProjectedTeam = (props:Team) => {
                 animate={{opacity: isFliped ? 1 : 0}}
                 transition={{delay: isFliped ? .2 : 0}}
                 initial={{opacity: 1}}
-                className='lg:h-[80%] h-[119px] w-full flip-card-back flex flex-col items-center justify-around -rotate-180  bg-primary rounded-3xl self-end'
+                className='h-[90%] w-full flip-card-back flex flex-col items-center justify-around -rotate-180  bg-primary rounded-3xl self-end'
             >
                 <div>
                     <h3 className='text-center text-rotation text-white font-normal uppercase lg:text-lg text-[14px]'>{props.name}</h3>

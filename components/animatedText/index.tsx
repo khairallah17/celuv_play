@@ -29,6 +29,9 @@ const AnimatedText = ({
         <motion.span
             initial="hidden"
             whileInView="visible"
+            viewport={{
+                once: true
+            }}
             transition={{
                 staggerChildren: 0.1,
                 delay: 2,
@@ -38,6 +41,9 @@ const AnimatedText = ({
             {text.split("").map((char, index) => (
                 <motion.span
                     key={index}
+                    viewport={{
+                        once: true
+                    }}
                     className='inline-block font-semibold'
                     variants={defaultAnimation}
                 >

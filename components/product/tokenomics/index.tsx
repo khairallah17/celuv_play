@@ -22,9 +22,11 @@ const TokenOmic = () => {
                 governance 
             </h2>
 
-            <div className='relative h-full flex items-center justify-center w-fit mb-10'>
+            <div className='relative h-full flex items-center justify-center flex-col gap-4 w-fit mb-10'>
                 {/* <Image fill src="/ecosystem_68.svg" height={0} width={0} alt='' className='w-auto h-auto' /> */}
-                <div className='bg-ecosystem-68-mobile lg:bg-ecosystem-68 bg-cover bg-center'></div>
+                <div className='bg-ecosystem-68-mobile lg:bg-ecosystem-68 bg-cover bg-center h-[210.13px] w-[315px] lg:h-[359.68px] lg:w-[708.43px]'></div>
+
+                {/* DESKTOP ECOSYSTEM 68 TEXT */}
                 <div className='lg:flex hidden'>
                     <AnimatedText className='text-secondary absolute -left-32 top-16' el='p' text='NFT Marketplace' />
                     <ul className='text-secondary absolute -left-28 top-32'>
@@ -49,6 +51,31 @@ const TokenOmic = () => {
                         <AnimatedText className='text-secondary font-light capitalize text-start' el='li' text='Crypto Swap' />
                     </ul>
                 </div>
+
+                {/* MOBILE ECOSYSTEM 68 TEXT */}
+                <div className='lg:hidden flex'>
+                    <ul className='absolute top-[133px] text-[11px] left-2 flex flex-col items-start text-start'>
+                        <AnimatedText className='text-secondary font-light capitalize text-start' el='li' text='swap pool LP incentive 10.2' />
+                        <AnimatedText className='text-secondary font-light capitalize text-start' el='li' text='operation and partners 9.2' />
+                        <AnimatedText className='text-secondary font-light capitalize text-start' el='li' text='ecosysetm expansion & reserve 6.1' />
+                        <AnimatedText className='text-secondary font-light capitalize text-start' el='li' text='content & community 6.1' />
+                        <AnimatedText className='text-secondary font-light capitalize text-start' el='li' text='first pool 0.02' />
+                    </ul>
+                </div>
+                <div className='lg:hidden flex gap-4'>
+                    <ul>
+                        <AnimatedText className='text-secondary font-light' el='li' text='NFT Marketplace' />
+                        <AnimatedText className='text-secondary font-light' el='li' text='NFT Mining' />
+                        <AnimatedText className='text-secondary font-light' el='li' text='NFT Staking' />
+                        <AnimatedText className='text-secondary font-light' el='li' text='NFT Mouting' />
+                    </ul>
+                    <ul>
+                        <AnimatedText className='text-secondary font-light capitalize text-start' el='li' text='DeFi DAO Governance' />
+                        <AnimatedText className='text-secondary font-light capitalize text-start' el='li' text='DApp Currency' />
+                        <AnimatedText className='text-secondary font-light capitalize text-start' el='li' text='Crypto Swap' />
+                    </ul>
+                </div>
+
             </div>
 
             <h2 className='text-secondary text-2xl uppercase font-light tracking-wider'>
@@ -57,7 +84,8 @@ const TokenOmic = () => {
             </h2>
 
             <div className='relative h-full flex items-center justify-center w-fit mb-10'>
-                <Image src="/ecosystem_50.svg" height={0} width={0} alt='' className='w-auto h-auto' />
+                {/* <Image src="/ecosystem_50.svg" height={0} width={0} alt='' className='w-auto h-auto' /> */}
+                <div className='bg-ecosystem-50-mobile lg:bg-ecosystem-50 bg-cover bg-center h-[258.93px] w-[315px] lg:h-[413.56px] lg:w-[673.1px]'></div>
                 <div className='lg:flex hidden'>
                     <ul className='text-secondary absolute -left-40 gap-12 flex flex-col items-start top-2'>
                         <AnimatedText className='text-secondary font-light' el='li' text='DApp Currency' />
