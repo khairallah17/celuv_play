@@ -83,9 +83,11 @@ const TokenOmic = () => {
                 utility / infrastructure
             </h2>
 
-            <div className='relative h-full flex items-center justify-center w-fit mb-10'>
+            <div className='relative h-full flex items-center justify-center flex-col gap-4 w-fit mb-10'>
                 {/* <Image src="/ecosystem_50.svg" height={0} width={0} alt='' className='w-auto h-auto' /> */}
                 <div className='bg-ecosystem-50-mobile lg:bg-ecosystem-50 bg-cover bg-center h-[258.93px] w-[315px] lg:h-[413.56px] lg:w-[673.1px]'></div>
+
+                {/* DESKTOP ECOSYSTEM 50 TEXT */}
                 <div className='lg:flex hidden'>
                     <ul className='text-secondary absolute -left-40 gap-12 flex flex-col items-start top-2'>
                         <AnimatedText className='text-secondary font-light' el='li' text='DApp Currency' />
@@ -111,6 +113,32 @@ const TokenOmic = () => {
                         <AnimatedText className='text-secondary font-light capitalize text-start absolute left-[102%] top-32 w-full' el='li' text='Exclusive AirDrop' />
                     </ul>
                 </div>
+
+                {/* MOBILE ECOSYSTEM 50 TEXT */}
+                <div className='lg:hidden flex'>
+                    <ul className='absolute top-[133px] text-[11px] left-2 flex flex-col items-start text-start'>
+                        <AnimatedText className='text-secondary font-light capitalize text-start' el='li' text='private sale 15' />
+                        <AnimatedText className='text-secondary font-light capitalize text-start' el='li' text='Marketing 9' />
+                        <AnimatedText className='text-secondary font-light capitalize text-start' el='li' text='Team 8' />
+                        <AnimatedText className='text-secondary font-light capitalize text-start' el='li' text='Strategic Partners 6' />
+                        <AnimatedText className='text-secondary font-light capitalize text-start' el='li' text='Operation 4' />
+                        <AnimatedText className='text-secondary font-light capitalize text-start' el='li' text='Advisor & Partners 4' />
+                        <AnimatedText className='text-secondary font-light capitalize text-start' el='li' text='Reserve 3' />
+                        <AnimatedText className='text-secondary font-light capitalize text-start' el='li' text='IDO & Public 1' />
+                    </ul>
+                </div>
+                <div className='lg:hidden flex gap-4'>
+                    <ul>
+                        <AnimatedText className='text-secondary font-light' el='li' text='DApp Curreny' />
+                        <AnimatedText className='text-secondary font-light' el='li' text='Crypto Swap' />
+                        <AnimatedText className='text-secondary font-light' el='li' text='CEX Listing' />
+                    </ul>
+                    <ul>
+                        <AnimatedText className='text-secondary font-light capitalize text-start' el='li' text='Partners Platform Currency' />
+                        <AnimatedText className='text-secondary font-light capitalize text-start' el='li' text='Exclusive Airdrop' />
+                    </ul>
+                </div>
+
             </div>
 
             <p className='text-secondary text-xl font-light uppercase'>*celb is scheduled to be listed on ces 1q</p>
