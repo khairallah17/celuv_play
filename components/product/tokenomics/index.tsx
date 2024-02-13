@@ -5,7 +5,7 @@ import AnimatedText from '@/components/animatedText'
 const TokenOmic = () => {
   return (
     <div className='mt-32 bg-gradient-to-b from-transparent to-secondary-light h-ful w-ful relative overflow-hidden'>
-        <Image fill src="/CLOUD.svg" alt='' className='bg-center bg-cover !top-[800px] opacity-55' />
+        <Image fill src="/CLOUD.svg" alt='' className='bg-center bg-cover !top-[400px] h-full !lg:top-[800px] opacity-55' />
         <div className='absolute top-32 left-0 w-full h-full bg-gradient-to-b from-white to-transparent -z-10'></div>
         <div className='container mx-auto flex items-center justify-center flex-col gap-4 pb-52'>
             <Image src="/tokenomics_logo.svg" height={0} width={0} alt='' className='w-auto h-auto' />
@@ -17,12 +17,12 @@ const TokenOmic = () => {
                 <li>to the ecosystem as a reward.</li>
             </ul>
 
-            <h2 className='text-secondary text-2xl uppercase font-light tracking-wider mt-10'>
+            <h2 className='text-secondary text-md lg:text-2xl uppercase font-light tracking-wider mt-10'>
                 <span className='font-bold'>cela </span>
                 governance 
             </h2>
 
-            <div className='relative h-full flex items-center justify-center flex-col gap-4 w-fit mb-10'>
+            <div className='relative h-full flex items-center justify-center flex-col gap-2 w-fit mb-10'>
                 {/* <Image fill src="/ecosystem_68.svg" height={0} width={0} alt='' className='w-auto h-auto' /> */}
                 <div className='bg-ecosystem-68-mobile lg:bg-ecosystem-68 bg-cover bg-center h-[210.13px] w-[315px] lg:h-[359.68px] lg:w-[708.43px]'></div>
 
@@ -54,7 +54,7 @@ const TokenOmic = () => {
 
                 {/* MOBILE ECOSYSTEM 68 TEXT */}
                 <div className='lg:hidden flex'>
-                    <ul className='absolute top-[133px] text-[11px] left-2 flex flex-col items-start text-start'>
+                    <ul className='absolute top-[133px] text-[11px] left-0 flex flex-col items-start text-start'>
                         <AnimatedText className='text-secondary font-light capitalize text-start' el='li' text='swap pool LP incentive 10.2' />
                         <AnimatedText className='text-secondary font-light capitalize text-start' el='li' text='operation and partners 9.2' />
                         <AnimatedText className='text-secondary font-light capitalize text-start' el='li' text='ecosysetm expansion & reserve 6.1' />
@@ -62,7 +62,7 @@ const TokenOmic = () => {
                         <AnimatedText className='text-secondary font-light capitalize text-start' el='li' text='first pool 0.02' />
                     </ul>
                 </div>
-                <div className='lg:hidden flex gap-4'>
+                <div className='lg:hidden flex gap-4 text-[11px] w-full text-left'>
                     <ul>
                         <AnimatedText className='text-secondary font-light' el='li' text='NFT Marketplace' />
                         <AnimatedText className='text-secondary font-light' el='li' text='NFT Mining' />
@@ -78,12 +78,12 @@ const TokenOmic = () => {
 
             </div>
 
-            <h2 className='text-secondary text-2xl uppercase font-light tracking-wider'>
+            <h2 className='text-secondary text-md lg:text-2xl uppercase font-light tracking-wider'>
                 <span className='font-bold'>celb </span>
                 utility / infrastructure
             </h2>
 
-            <div className='relative h-full flex items-center justify-center flex-col gap-4 w-fit mb-10'>
+            <div className='relative h-full flex items-center justify-center flex-col gap-2 w-fit mb-10'>
                 {/* <Image src="/ecosystem_50.svg" height={0} width={0} alt='' className='w-auto h-auto' /> */}
                 <div className='bg-ecosystem-50-mobile lg:bg-ecosystem-50 bg-cover bg-center h-[258.93px] w-[315px] lg:h-[413.56px] lg:w-[673.1px]'></div>
 
@@ -116,7 +116,7 @@ const TokenOmic = () => {
 
                 {/* MOBILE ECOSYSTEM 50 TEXT */}
                 <div className='lg:hidden flex'>
-                    <ul className='absolute top-[133px] text-[11px] left-2 flex flex-col items-start text-start'>
+                    <ul className='absolute top-[133px] text-[11px] left-0 flex flex-col items-start text-start'>
                         <AnimatedText className='text-secondary font-light capitalize text-start' el='li' text='private sale 15' />
                         <AnimatedText className='text-secondary font-light capitalize text-start' el='li' text='Marketing 9' />
                         <AnimatedText className='text-secondary font-light capitalize text-start' el='li' text='Team 8' />
@@ -127,7 +127,7 @@ const TokenOmic = () => {
                         <AnimatedText className='text-secondary font-light capitalize text-start' el='li' text='IDO & Public 1' />
                     </ul>
                 </div>
-                <div className='lg:hidden flex gap-4'>
+                <div className='lg:hidden flex gap-4 text-[11px] text-left w-full'>
                     <ul>
                         <AnimatedText className='text-secondary font-light' el='li' text='DApp Curreny' />
                         <AnimatedText className='text-secondary font-light' el='li' text='Crypto Swap' />
@@ -141,7 +141,7 @@ const TokenOmic = () => {
 
             </div>
 
-            <p className='text-secondary text-xl font-light uppercase'>*celb is scheduled to be listed on ces 1q</p>
+            <p className='text-secondary text-center lg:px-0 px-20 lg:text-xl font-light uppercase'>*celb is scheduled to be listed on ces 1q</p>
         </div>
 
     </div>
