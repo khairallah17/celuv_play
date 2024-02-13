@@ -9,17 +9,21 @@ import Partners from '../partners'
 const ThemePark = () => {
   return (
 
-    <div className=''>
+    <div className='relative z-[10]'>
         <motion.div
             initial={{y:100, opacity: 0}}
             whileInView={{y:0, opacity: 1}}
             transition={{delay: .01, duration: 1}}
             viewport={{once: true}}
-            className='container mx-auto mt-32 flex flex-col item-center gap-12 mb-10 z-[99] relative'>
+            className='container mx-auto mt-10 lg:mt-32 flex flex-col item-center gap-12 mb-10 z-[99] relative'>
 
-            <h2 className='uppercase text-primary-light text-5xl lg:text-7xl font-bold text-center'>
+            {/* <h2 className='uppercase text-primary-light text-5xl lg:text-7xl font-bold text-center'>
                 web 3 theme park dao
-            </h2>
+            </h2> */}
+            {/* <Image src="/WEB 3 THEME PARK DAO.png" height={37} width={567} className='self-center' alt='' quality={100} /> */}
+            <div className=' lg:bg-web3-park-dao bg-web3-park-dao-mobile lg:h-[37px] lg:w-[567px] h-[59.08px] w-[270.57px] bg-cover bg-center self-center'>
+
+            </div>
             <div className="text-third text-left lg:text-center w-[90%] lg:w-[1000px] border-secondary drop-shadow-primary bg-white border rounded-xl py-10 leading-7 self-center px-10">
                 <p className='font-light'>
                     Our aim is to create a <span className='font-bold'>WEB3 Theme Park Dao</span> focusing on entertainement and DeFi.
@@ -40,14 +44,17 @@ const ThemePark = () => {
             transition={{delay: .01, duration: 1}}
             viewport={{once: true}}
             className="container mx-auto flex flex-col item-center gap-12 mb-10 z-[99] relative">
-                <h2 className='uppercase text-primary-light text-5xl font-bold text-center mt-10'>
+                {/* <h2 className='uppercase text-primary-light text-5xl font-bold text-center mt-10'>
                     vision & goal
-                </h2>
+                </h2> */}
+
+                <Image src="/VISION & GOAL.png" className='self-center' height={28} width={296} alt='' quality={100} />
 
                 <div className="text-primary w-[90%] lg:w-[1000px] lg:flex-row flex-col border-secondary drop-shadow-primary bg-white border rounded-xl py-10 self-center px-10 flex items-center gap-10">
-                    <h4 className='font-bold text-4xl lg:text-6xl uppercase text-start lg:text-right'>
+                    {/* <h4 className='font-bold text-4xl lg:text-6xl uppercase text-start lg:text-right'>
                         &quot; new daily
-                    </h4>
+                    </h4> */}
+                    <Image className='self-center' src="/NEW DAILY.png" height={159} width={175} alt='' quality={100} />
                     <div className='text-third flex flex-col gap-4 font-light'>
                         <p>
                             <span className='font-bold'>Dismantling the bariers</span> associate with the crypto and blockchain realm, both physically and psychologically

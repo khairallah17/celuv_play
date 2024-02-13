@@ -28,7 +28,11 @@ const config: Config = {
         "ecosystem-68": "url(/ecosystem_68.svg)",
         "ecosystem-68-mobile": "url(/ecosystem_68_mobile.svg)",
         "ecosystem-50": "url(/ecosystem_50.svg)",
-        "ecosystem-50-mobile": "url(/ecosystem_50_mobile.svg)"
+        "ecosystem-50-mobile": "url(/ecosystem_50_mobile.svg)",
+        "our-partners": "url('/OUR PARTNERS.png')",
+        "our-partners-mobile": "url(/OUR PARTNERS MOBILE.png)",
+        "web3-park-dao": "url(/web3-theme-park-dao.png)",
+        "web3-park-dao-mobile": "url(/web3-theme-park-dao-mobile.png)"
       },
       dropShadow: {
         "primary-sh": "0px 3px 8px rgba(2, 156, 190, 0.5)",

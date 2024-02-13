@@ -17,7 +17,7 @@ const ProjectedGameWBtn = (props:Game) => {
         <div className='bg-astian-lighter rounded-x-btn flex flex-col items-center  justify-center border border-astian gap-6 drop-shadow-game-bx relative z-auto w-[365px] h-fit lg:py-0 py-10 lg:h-[588px]'>
             <div className="absolute bg-astian-normal h-full w-[100.3%] top-10 border border-astian left-[-1px] z-[-1] rounded-[40px]"></div>
             <Image src={`/${props.title}.svg`} alt='' height={0} width={0} className={`${props.imageSIze}`} />
-            <p className='w-[60%] text-center font-medium text-astian text-md uppercase h-fit lg:h-[50px]'>
+            <p className='lg:w-[60%] w-[70%] text-center font-medium text-astian text-md uppercase h-fit lg:h-[50px]'>
                 {props.subtitle}
             </p>
             <div className='bg-astian-dark rounded-[40px] w-[215px] lg:w-3/4 h-auto aspect-square'>
@@ -26,7 +26,7 @@ const ProjectedGameWBtn = (props:Game) => {
                 </div>
             </div>
             <div className='h-[100px] px-5 lg:px-0'>
-                <ProjectedButton image={`/${props.cta}.svg`} buttonClass={props.btnClass} className={props.btnClass2} imageSize='' color='' addClass='' />
+                <ProjectedButton image={`/${props.cta}.svg`} buttonClass={props.btnClass} className={props.btnClass2} imageSize='w-[219.54px] h-[30.81px]' color='' addClass='' />
             </div>
         </div>
     )

@@ -1,11 +1,19 @@
 "use client"
-import React from 'react'
+import React, { useEffect } from 'react'
 import Image from 'next/image'
 import ProjectedGame from './ProjectedGame'
 import { motion } from "framer-motion"
+import GlobalContextHooks from '@/hooks/GlobalContextHooks'
 
 const Hero = () => {
-  return (
+  
+  const { setActiveNav, activeNav } = GlobalContextHooks()
+
+  useEffect(() => {
+    setActiveNav("our product")
+  }, [])
+
+    return (
     <div className='flex w-full h-full justify-center relative flex-col bg-[#DEEFFF] py-20'>
         <Image fill src="/astian_clouds.svg" alt='couds' className='bg-cover bg-center h-full w-full z-10' />
         
@@ -31,7 +39,7 @@ const Hero = () => {
             initial={{opacity: 0, y: 30}}
             viewport={{once: true}}
             transition={{delay: .03, duration: .3}}
-            className='text-third font-normal text-center text-lg'>
+            className='text-third font-normal text-center text-lg lg:px-0 px-10'>
                 Our super dApp <span className='font-bold'>&quot;ASTIAN&quot;</span> serves as the cornerstone of our platform <br />
                 offering a range of products and services.
             </motion.p>
@@ -42,10 +50,10 @@ const Hero = () => {
             viewport={{once: true}}
             transition={{delay: .04, duration: .3}}
             className='flex items-center gap-4 justify-center'>
-                <button className='border border-astian hover:bg-astian hover:text-white duration-200 drop-shadow-astian-sh bg-white px-8 py-2 text-astian uppercase rounded-lg'>
+                <button className='border w-[150px] border-astian hover:bg-astian hover:text-white duration-200 drop-shadow-astian-sh bg-white px-8 py-2 text-astian uppercase rounded-lg'>
                     ios
                 </button>
-                <button className='border border-astian hover:bg-astian hover:text-white duration-200 drop-shadow-astian-sh bg-white px-8 py-2 text-astian uppercase rounded-lg'>
+                <button className='border w-[150px] border-astian hover:bg-astian hover:text-white duration-200 drop-shadow-astian-sh bg-white px-8 py-2 text-astian uppercase rounded-lg'>
                     android
                 </button>
             </motion.div>
@@ -55,10 +63,10 @@ const Hero = () => {
             initial={{opacity: 0, y: 30}}
             viewport={{once: true}}
             transition={{delay: .05, duration: .3}}
-            className='grid lg:grid-cols-4 grid-cols-2 lg:grid-rows-1 grid-rows-1 gap-2 lg:gap-6 mt-16 items-center justify-center lg:px-0 px-5'>
+            className='grid lg:grid-cols-4 grid-cols-2 lg:grid-rows-1 grid-rows-1 gap-2 lg:gap-6 mt-16 items-center justify-center mx-auto lg:px-0 px-5'>
                 <ProjectedGame image1='nft_product' image2='nft_name' nameSize="h-[52px] w-[155px]" />
                 <ProjectedGame image1='game_product' image2='game_name' nameSize="h-[43px] w-[174px]" />
-                <ProjectedGame image1='ipuniverse_product' image2='ipuniverse_name' nameSize="h-[63px] w-[181px]" />
+                <ProjectedGame image1='ipuniverse_product' image2='ipuniverse_name' paddingImg='p-3' nameSize="lg:h-[63px] lg:w-[181px] aspect-[2.87] w-[150px] h-auto" />
                 <ProjectedGame image1='social_life_product' image2='social_life_name' nameSize="h-[78px] w-[178px]" />
             </motion.div>
 

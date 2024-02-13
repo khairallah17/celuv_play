@@ -16,7 +16,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={red_hat_display.className}>{children}</body>
+      <body className={red_hat_display.className}>
+        {children}
+      </body>
     </html>
   );
 }

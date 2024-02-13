@@ -2,8 +2,8 @@
 @tailwind utilities;
 @tailwind components;
 
-.whitepaper-btn:hover > p {
+/* .whitepaper-btn:hover > p {
     width: fit-content !important;
     opacity: 1 !important;
     display: inline !important;
-}
+} */

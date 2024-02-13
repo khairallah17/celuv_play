@@ -2,6 +2,7 @@
 import React from 'react'
 import { motion } from "framer-motion"
 import ProjectedTeam from '../../projectedTeam'
+import Image from 'next/image'
 
 const team1 = [ { name: "justin ha", pos: "ceo", slog: "wemade wemademax" },
                 { name: "young choi", pos: "cto", slog: "wemade blockchain" },
@@ -23,25 +24,23 @@ const Team = () => {
         whileInView={{y:0, opacity: 1}} 
         transition={{delay: .01, duration: 1}}
         viewport={{once: true}}
-        className='container mx-auto my-20 lg:px-0 px-10'>
-            <h2 className='lg:text-6xl text-4xl font-bold text-center uppercase text-primary'>our team</h2>
+        className='container mx-auto my-20 lg:px-52 px-10 flex items-center justify-center flex-col'>
+            {/* <h2 className='lg:text-6xl text-4xl font-bold text-center uppercase text-primary'>our team</h2> */}
+            <Image src="/OUR TEAM.png" height={28} width={212} className='self-center' alt='' />
 
             <div className='mt-10 lg:mt-20 flex items-center justify-between flex-wrap gap-y-10'>
-                <div className='flex items-center justify-around w-full h-full flex-wrap gap-4'>
+                <div className='flex items-center justify-center w-full h-full flex-wrap gap-6 lg:gap-16'>
                     {
                         team1.map((item, index) => (
                             <ProjectedTeam key={index} name={item.name} position={item.pos} slogon={item.slog} />
                         ))
                     }
-                </div>
-                <div className='flex items-center justify-around w-full h-full flex-wrap gap-4'>
                     {
                         team2.map((item, index) => (
                             <ProjectedTeam key={index} name={item.name} position={item.pos}/>
                         ))
                     }
-                </div>
-                <div className='flex items-center justify-around w-full h-full flex-wrap gap-4'>
+
                     {
                         team3.map((item, index) => (
                             <ProjectedTeam key={index} name={item.name} position={item.pos}/>

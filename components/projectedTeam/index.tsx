@@ -24,46 +24,43 @@ const ProjectedTeam = (props:Team) => {
     }
 
     return (
-        <div className='flip-card w-[120px] h-[131px] lg:h-80 lg:w-auto aspect-square bg-primary-lighter border border-primary rounded-3xl drop-shadow-primary-sh duration-200 hover:-translate-y-2' onClick={handleFlip}>
+        <motion.div 
+        initial={false}
+        animate={{
+            rotateX: isFliped ? 180: 360,
+            alignItems: isFliped ? "end" : "start"
+        }}
+        transition={{
+            duration: 0.2,
+            ease: "easeInOut"
+        }}
+        onAnimationComplete={() => setIsAnimating(false)}
+        className='flip-card w-[120px] h-[131px] lg:h-[230.82px] lg:w-[212.35px] aspect-square bg-primary-lighter border border-primary rounded-3xl drop-shadow-primary-sh duration-200 hover:-translate-y-2 flex' onClick={handleFlip}>
+        <div className={`flip-card-front bg-cover bg-center w-full h-[80%] p-10 rounded-3xl ${!isFliped ? "bg-primary" : "transparent"} durantion-700`}>
             <motion.div
-                initial={false}
-                animate={{
-                    rotateX: isFliped ? 180: 360
-                }}
-                transition={{
-                    duration: 0.2,
-                    ease: "easeInOut"
-                }}
-                onAnimationComplete={() => setIsAnimating(false)}
-                className='bg-primary w-full h-[90%] rounded-3xl flip-card-inner'>
-                    <div className="flip-card-back w-full h-full rounded-3xl bg-white">
-                    <motion.div
-                            initial={{opacity: 1}}
-                            animate={{opacity: isFliped ? 1 : 0}}
-                            transition={{delay: isFliped ? .2 : 0}}
-                            className='h-full flex flex-col items-center justify-around -rotate-180'
-                        >
-                            <div>
-                                <h3 className='text-center rotate-180 text-rotation text-white font-normal uppercase text-lg'>{props.name}</h3>
-                                <h2 className='text-white rotate-180 text-rotation font-semibold uppercase text-xl text-center'>{props.position}</h2>
-                            </div>
-                            <div className='text-white rotate-180 text-rotation font-light text-center uppercase'>
-                                <p>{props.slogon?.split(' ')[0]}</p>
-                                <p>{props.slogon?.split(' ')[1]}</p>
-                            </div>
-                        </motion.div>
-                    </div>
-                    <div className="flip-card-front bg-cover bg-center w-full h-full p-10 rounded-3xl bg-primary">
-                        <motion.div
-                            initial={{opacity: 1}}
-                            animate={{opacity: !isFliped ? 1 : 0}}
-                            transition={{delay: !isFliped ? 0.4 : 0}}
-                        >
-                            <Image fill src="/team.svg" alt='' quality={100} className='bg-cover bg-center rounded-3xl ' />
-                        </motion.div>
-                    </div>
+                initial={{opacity: 1}}
+                animate={{opacity: !isFliped ? 1 : 0}}
+                transition={{delay: !isFliped ? 0.4 : 0}}
+            >
+                <Image fill src="/team.svg" alt='' quality={100} className='bg-cover bg-center rounded-3xl ' />
             </motion.div>
         </div>
+        <motion.div
+                animate={{opacity: isFliped ? 1 : 0}}
+                transition={{delay: isFliped ? .2 : 0}}
+                initial={{opacity: 1}}
+                className='lg:h-[80%] h-[119px] w-full flip-card-back flex flex-col items-center justify-around -rotate-180  bg-primary rounded-3xl self-end'
+            >
+                <div>
+                    <h3 className='text-center text-rotation text-white font-normal uppercase lg:text-lg text-[14px]'>{props.name}</h3>
+                    <h2 className='text-white text-rotation font-semibold uppercase lg:text-xl text-center text-[14px]'>{props.position}</h2>
+                </div>
+                <div className='text-white text-rotation font-light text-center uppercase text-[14px] lg:block hidden'>
+                    <p>{props.slogon?.split(' ')[0]}</p>
+                    <p>{props.slogon?.split(' ')[1]}</p>
+                </div>
+            </motion.div>
+        </motion.div>
     )
 }
 
