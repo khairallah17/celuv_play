@@ -12,12 +12,13 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        "gradient-primary": "",
+        "astian_dapp_mobile": "url(/astian_dapp_mobile.png)",
         "slide-1": "url(/nft_slide.jpg)",
         "linear-primary": "linear-gradient(to left, #2BC1D6, #049CBE)",
         "linear-secondary": "linear-gradient(to bottom right, rgba(43, 193, 214, .50), rgba(4, 156, 190, .5))",
         "phone": "url(/astian_dapp.svg)",
         "nft-image": "url(/nft_world.svg)",
+        "nft-world-mobile": "url(/nft_world.svg)",
         "play-image": "url(/play_now_bg.svg)",
         "slide1": "url(/site-banner-main.png)",
         "slide2": "url(/site-banner-1.png)",
@@ -32,7 +33,9 @@ const config: Config = {
         "our-partners": "url('/OUR PARTNERS.png')",
         "our-partners-mobile": "url(/OUR PARTNERS MOBILE.png)",
         "web3-park-dao": "url(/web3-theme-park-dao.png)",
-        "web3-park-dao-mobile": "url(/web3-theme-park-dao-mobile.png)"
+        "web3-park-dao-mobile": "url(/web3-theme-park-dao-mobile.png)",
+        "new_daily": "url(/new_daily.png)",
+        "new_daily_mobile": "url(/new_daily_mobile.png)"
       },
       dropShadow: {
         "primary-sh": "0px 3px 8px rgba(2, 156, 190, 0.5)",

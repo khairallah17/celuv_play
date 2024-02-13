@@ -50,11 +50,12 @@ const ThemePark = () => {
 
                 <Image src="/VISION & GOAL.png" className='self-center' height={28} width={296} alt='' quality={100} />
 
-                <div className="text-primary w-[90%] lg:w-[1000px] lg:flex-row flex-col border-secondary drop-shadow-primary bg-white border rounded-xl py-10 self-center px-10 flex items-center gap-10">
+                <div className="text-primary w-[90%] lg:w-[1000px] lg:flex-row flex-col border-secondary drop-shadow-primary bg-white border rounded-xl py-10 self-center px-10 flex items-center gap-6 lg:gap-10">
                     {/* <h4 className='font-bold text-4xl lg:text-6xl uppercase text-start lg:text-right'>
                         &quot; new daily
                     </h4> */}
-                    <Image className='self-center' src="/NEW DAILY.png" height={159} width={175} alt='' quality={100} />
+                    {/* <Image className='self-center' src="/NEW DAILY.png" height={159} width={175} alt='' quality={100} /> */}
+                    <div className='lg:bg-new_daily bg-new_daily_mobile h-[21px] w-[202px] self-start'></div>
                     <div className='text-third flex flex-col gap-4 font-light'>
                         <p>
                             <span className='font-bold'>Dismantling the bariers</span> associate with the crypto and blockchain realm, both physically and psychologically
@@ -74,22 +75,22 @@ const ThemePark = () => {
             whileInView={{y:0, opacity: 1}}
             transition={{delay: .01, duration: 1}}
             viewport={{once: true}}
-            className='container mx-auto flex lg:items-center overflow-hidden items-start justify-center lg:flex-row flex-col gap-4 my-20 lg:my-56 z-50 relative'>
+            className='container mx-auto flex w-full items-center overflow-hidden justify-center lg:flex-row flex-col gap-4 my-20 lg:my-56 z-50 relative'>
                 
-                <div>
+                <div className='flex items-center justify-center flex-col'>
                     
-                    <div className='bg-phone bg-center bg-no-repeat bg-cover w-auto lg:h-[200px] h-[96px] aspect-[3.77] flex items-center pl-4 gap-4 overflow-visible'>
+                    <div className='lg:bg-phone bg-astian_dapp_mobile lg:items-start lg:justify-start bg-center self-center bg-no-repeat bg-cover lg:w-auto lg:h-[200px] h-[227.01px] w-[249px] lg:aspect-[3.77] justify-center flex items-center lg:pl-4 p-2 gap-4 overflow-visible'>
                         
                         {/* <Image src={BtnBackground} fill sizes='100vw' quality={100} height={0} width={0} alt='btn background'/> */}
                         {/* <div className=' bg-phone bg-center bg-no-repeat bg-cover w-full h-full'></div> */}
-                        <div className='flex items-center gap-4 lg:-mt-3 mt-3 ml-2 mb-11 lg:ml-10'>
-                            <ProjectedButton buttonClass="hover:bg-ios-light duration-200 bg-white border border-ios w-full relative px-5 lg:px-10 rounded-xl lg:rounded-3xl lg:py-3 z-40 h-10 lg:h-24 flex items-center justify-center" className='absolute bg-ios-light border border-ios h-full w-full left-0 rounded-xl lg:rounded-3xl top-3 lg:top-5' imageSize='lg:w-[127px] lg:h-[49px] w-14' addClass='w-full' image='/ios.svg' color='ios'/>
-                            <ProjectedButton buttonClass="hover:bg-ios-light duration-200 bg-white border border-ios w-full relative px-5 lg:px-10 rounded-xl lg:rounded-3xl lg:py-3 z-40 h-10 lg:h-24 flex items-center justify-center" className='absolute bg-ios-light border border-ios h-full w-full left-0 rounded-xl lg:rounded-3xl top-3 lg:top-5' imageSize='lg:w-[196px] lg:h-[33px] w-24' addClass='w-full' image='/android.svg' color='ios'/>
+                        <div className='lg:flex-row flex-col flex mt-4 items-center gap-4 lg:ml-10 lg:self-start lg:mt-5 self-center'>
+                            <ProjectedButton buttonClass="hover:bg-ios-light duration-200 bg-white border border-ios w-full relative px-5 lg:px-10 rounded-3xl lg:py-3 z-40 h-[66.01px] w-[214.83px] lg:h-24 flex items-center justify-center" className='absolute bg-ios-light border border-ios h-full w-full left-0 rounded-3xl top-3 lg:top-5 ' imageSize='lg:w-[127px] lg:h-[49px] h-[38.86px] w-[200.4px]' addClass='w-full' image='/ios.svg' color='ios'/>
+                            <ProjectedButton buttonClass="hover:bg-ios-light duration-200 bg-white border border-ios w-full relative px-5 lg:px-10 rounded-3xl lg:py-3 z-40 h-[66.01px] w-[214.83px] lg:h-24 flex items-center justify-center" className='absolute bg-ios-light border border-ios h-full w-full left-0 rounded-3xl top-3 lg:top-5' imageSize='lg:w-[196px] lg:h-[33px] h-[26.46px] w-[154.21px]' addClass='w-full' image='/android.svg' color='ios'/>
                         </div>
                     </div>
 
                     <div className='bg-nft-image bg-center bg-no-repeat bg-cover w-auto lg:h-[280px] h-[160px] aspect-[2.76] flex items-center justify-start gap-4 overflow-visible relative'>
-                        <div className='absolute  hidden left-[85%] top-[40%] lg:flex flex-col gap-1'>
+                        <div className='absolute hidden left-[85%] top-[40%] lg:flex flex-col gap-1'>
                             <AnimatedText className='uppercase font-light text-white' text='automining'/>
                             <AnimatedText className='uppercase font-light text-white' text='stacking'/>
                             <AnimatedText className='uppercase font-light text-white' text='mounting'/>
@@ -109,7 +110,7 @@ const ThemePark = () => {
 
                 </div>
 
-                <div className='lg:mt-20 lg:px-0 px-5'>
+                <div className='lg:mt-20 lg:px-0 px-5 order-2'>
                     <div className=' bg-play-image bg-cover bg-center w-auto lg:h-[310.1px] h-[166.1px] aspect-[1.126] relative'>
                         <div className="absolute flex flex-col items-end right-[33%] top-[82%]">
                             <AnimatedText className='uppercase text-xs lg:text-lg font-thin lg:font-light text-white' text='mini-games'/>
