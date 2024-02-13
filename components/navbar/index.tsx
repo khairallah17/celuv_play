@@ -32,17 +32,17 @@ const Navbar = () => {
                         ))
                     }
                 </ul>
-                {/* <HiBars2 height={60} width={60} className='text-primary-dark opacity-50 h-8 w-8 border-[1px] border-primary-dark px-1 rounded-md'/> */}
+                <HiBars2 onClick={() => setShowMenu(!showMenu)} height={60} width={60} className='text-primary-dark flex lg:hidden opacity-50 h-8 w-8 border-[1px] border-primary-dark px-1 rounded-md'/>
                 <Link href="/whitepaper" className='uppercase lg:flex hidden tracking-wider hover:shadow-secondary duration-200 text-secondary border-[1px] border-secondary font-light px-4 py-2 rounded-xl'>
                     whitepaper
-                </Link>{/* 
+                </Link>
                     <motion.ul
                         layout
-                        className='flex lg:hidden flex-col fixed bg-white top-[61px] left-0 h-screen w-full z-[1000]'>
+                        className={`${showMenu ? "h-screen" : "h-0"} lg:hidden flex-col fixed bg-white top-[61px] left-0 w-full z-[1000]`}>
                             <motion.li
-                                animate={{ opacity: 1 }}
+                                animate={{ opacity: showMenu ? 1 : 0 }}
                                 transition={{ delay: 1/3 }}
-                                className='w-full px-4 py-4 border-b-[1px] border-secondary opacity-0'>
+                                className={`w-full px-4 py-4 ${showMenu ? "flex" : "hidden"} border-b-[1px] border-secondary opacity-0`}>
                                 <Link href="/whitepaper" className='text-secondary uppercase tracking-widest hover:shadow-secondary hover:font-bold duration-200 font-light'>
                                     <p className='container mx-auto text-right'>
                                         whitepaper
@@ -52,10 +52,10 @@ const Navbar = () => {
                         {
                             menu.map((item, index) => (
                                 <motion.li 
-                                    animate={{ opacity: 1 }}
+                                    animate={{ opacity: showMenu ? 1 : 0 }}
                                     transition={{ delay: (Number(index) + 2)/3 }}
                                     key={index}
-                                    className='w-full px-4 py-4 border-b-[1px] border-primary opacity-0'>
+                                    className={`w-full px-4 py-4 ${showMenu ? "flex" : "hidden"} border-b-[1px] border-primary opacity-0`}>
                                     <Link className='text-primary uppercase tracking-widest hover:drop-shadow-primary hover:font-bold duration-200 font-light' href={`${item.link}`}>
                                         <p className='container mx-auto text-right'>
                                             {item.text}
@@ -64,7 +64,7 @@ const Navbar = () => {
                                 </motion.li>
                             ))
                         }
-                    </motion.ul> */}
+                    </motion.ul>
             </nav>
         </div>
     )
