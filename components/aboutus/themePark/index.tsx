@@ -77,9 +77,9 @@ const ThemePark = () => {
             viewport={{once: true}}
             className='container mx-auto flex w-full items-center overflow-hidden justify-center lg:flex-row flex-col gap-4 my-20 lg:my-56 z-50 relative'>
                 
-                <div className='flex items-center justify-center flex-col'>
+                <div className='flex items-center justify-center gap-5 flex-col'>
                     
-                    <div className='lg:bg-phone bg-astian_dapp_mobile lg:items-start lg:justify-start bg-center self-center bg-no-repeat bg-cover lg:w-auto lg:h-[200px] h-[227.01px] w-[249px] lg:aspect-[3.77] justify-center flex items-center lg:pl-4 p-2 gap-4 overflow-visible'>
+                    <div className='lg:bg-phone bg-astian_dapp_mobile lg:items-start lg:justify-start bg-center self-center bg-no-repeat bg-cover lg:w-auto lg:h-[200px] h-[227.01px] w-[249px] lg:aspect-[3.77] justify-center flex items-center lg:pl-4 p-2 px-4 gap-4 overflow-visible'>
                         
                         {/* <Image src={BtnBackground} fill sizes='100vw' quality={100} height={0} width={0} alt='btn background'/> */}
                         {/* <div className=' bg-phone bg-center bg-no-repeat bg-cover w-full h-full'></div> */}
@@ -89,7 +89,20 @@ const ThemePark = () => {
                         </div>
                     </div>
 
-                    <div className='bg-nft-image bg-center bg-no-repeat bg-cover w-auto lg:h-[280px] h-[160px] aspect-[2.76] flex items-center justify-start gap-4 overflow-visible relative'>
+                    <div className='lg:mt-20 lg:px-0 px-5 lg:hidden block'>
+                        <div className='bg-play-image-mobile lg:bg-play-image bg-cover flex items-center justify-center bg-center lg:w-auto lg:h-[310.1px] w-[249px] h-[168.09px] lg:aspect-[1.126] relative'>
+                            <div className="absolute  hidden lg:flex flex-col items-end right-[33%] top-[82%]">
+                                <AnimatedText className='uppercase text-xs lg:text-lg font-thin lg:font-light text-white' text='mini-games'/>
+                                <AnimatedText className='uppercase text-xs lg:text-lg font-thin lg:font-light text-white' text='rewards'/>
+                                <AnimatedText className='uppercase text-xs lg:text-lg font-thin lg:font-light text-white' text='events'/>
+                            </div>
+                            <div className='self-center flex items-start lg:h-full lg:w-full lg:pb-6 lg:p-3 p-2 justify-center lg:mt-2 mt-3'>
+                                <ProjectedButton buttonClass="hover:bg-play-light px-6 py-4 lg:h-[50%] h-[45%] duration-200 bg-white border border-play lg:w-full relative lg:px-10 lg:rounded-[40px] rounded-3xl g:py-3 z-40 w-[214.44px] h-[94.68px] flex items-center justify-center" className='absolute bg-play-light border border-play h-[105%] lg:h-[50%] w-full left-0 lg:rounded-[40px] rounded-3xl top-3 lg:top-5' imageSize='h-[59.19px] w-[153.71px] lg:w-[195px] lg:h-[75px]' addClass='w-full' image='/play_now.svg' color='play'/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className='bg-nft-world-mobile lg:bg-nft-image bg-center bg-no-repeat bg-cover lg:w-auto lg:h-[280px] h-[333.05px] w-[249px] lg:aspect-[2.76] flex items-center justify-center lg:pt-0 pt-8 lg:justify-start gap-4 overflow-visible relative'>
                         <div className='absolute hidden left-[85%] top-[40%] lg:flex flex-col gap-1'>
                             <AnimatedText className='uppercase font-light text-white' text='automining'/>
                             <AnimatedText className='uppercase font-light text-white' text='stacking'/>
@@ -99,26 +112,26 @@ const ThemePark = () => {
                         <div className="absolute lg:flex hidden top-[93%] left-[16.5%]">
                             <AnimatedText className='uppercase font-light text-white' text='marketplace'/>
                         </div>
-                        <div className='flex flex-col lg:justify-center justify-start items-start gap-4 lg:gap-6 ml-6 mr-[88px] mb-6 lg:mb-11 lg:mt-5 lg:ml-12 w-full lg:w-auto'>
-                            <ProjectedButton buttonClass="hover:bg-nft-light duration-200 bg-white border relative w-full border-nft relative lg:px-5 rounded-2xl px-3 lg:rounded-3xl lg:py-3 z-40 h-10 lg:h-20 flex items-center justify-center" className='absolute bg-nft-light border border-nft h-full w-full left-0 rounded-2xl lg:rounded-3xl top-3 lg:top-5' imageSize='w-40 lg:w-[242px] lg:h-[42px]' addClass='w-[50%]' image='/opensea.svg' color='nft'/>
-                            <div className='flex items-center justify-between w-full h-full lg:gap-3 gap-2 -mt-3 lg:-mt-5'>
-                                <ProjectedButton buttonClass="hover:bg-nft-light duration-200 bg-white border border-nft w-full relative lg:px-5 px-3 lg:rounded-3xl rounded-2xl lg:py-3 z-40 lg:h-20 h-12 flex items-center justify-center" className='absolute bg-nft-light border border-nft h-full w-full left-0 rounded-2xl lg:rounded-3xl top-3 lg:top-5' imageSize='w-[138px] h-[27px] lg:w-[258px] lg:h-[52px]' addClass='w-full' image='/oneplanet.svg' color='nft'/>
-                                <ProjectedButton buttonClass="hover:bg-nft-light duration-200 bg-white border border-nft relative lg:px-7 px-3 lg:rounded-3xl rounded-2xl lg:py-3 z-40 lg:h-28 lg:mb-6 mb-0 h-16 w-full flex items-center justify-center" className='absolute bg-nft-light border border-nft h-full w-full left-0 rounded-2xl lg:rounded-3xl top-3 lg:top-5' imageSize='lg:w-[193px] lg:h-[61px] w-[104px] h-[32px] lg:h-40 lg:aspect-auto aspect-square' addClass='w-full' image='/nerdimoodi.svg' color='nft' />
+                        <div className='flex lg:flex-col flex-col-reverse lg:justify-center items-center lg:items-start gap-5 lg:gap-6 lg:p-0 p-5 lg:mb-11 lg:mt-5 lg:ml-12 w-full lg:w-auto'>
+                            <ProjectedButton buttonClass="hover:bg-nft-light duration-200 bg-white border relative w-full border-nft relative lg:px-5 px-3 rounded-3xl lg:py-3 z-40 h-[65.98px] lg:h-20 flex items-center justify-center" className='absolute bg-nft-light border border-nft h-full w-full left-0 rounded-3xl top-3 lg:top-5' imageSize='h-[33.57px] w-[180.91px] lg:w-[242px] lg:h-[42px]' addClass='w-full lg:w-[50%]' image='/opensea.svg' color='nft'/>
+                            <div className='flex items-center justify-between lg:flex-row flex-col-reverse w-full h-full lg:gap-3 gap-5 -mt-3 lg:-mt-5'>
+                                <ProjectedButton buttonClass="hover:bg-nft-light duration-200 bg-white border border-nft w-full relative lg:px-5 px-3 rounded-3xl lg:py-3 z-40 lg:h-20 h-[65.98px] w-[214.44px] flex items-center justify-center" className='absolute bg-nft-light border border-nft w-full h-full left-0 rounded-3xl top-3 lg:top-5' imageSize='w-[180.09px] h-[35.72px] lg:w-[258px] lg:h-[52px]' addClass='w-full' image='/oneplanet.svg' color='nft'/>
+                                <ProjectedButton buttonClass="hover:bg-nft-light duration-200 bg-white border border-nft relative lg:px-7 px-3 py-4 rounded-3xl lg:py-3 z-40 lg:h-28 lg:mb-6 mb-0 h-[85.93px] w-full flex items-center justify-center" className='absolute bg-nft-light border border-nft h-full w-full left-0 rounded-3xl top-3 lg:top-5' imageSize='lg:w-[193px] lg:h-[61px] w-[154.72px] h-[47.97px] lg:h-40 lg:aspect-auto aspect-square' addClass='w-full' image='/nerdimoodi.svg' color='nft' />
                             </div>
                         </div>
                     </div>
 
                 </div>
 
-                <div className='lg:mt-20 lg:px-0 px-5 order-2'>
-                    <div className=' bg-play-image bg-cover bg-center w-auto lg:h-[310.1px] h-[166.1px] aspect-[1.126] relative'>
-                        <div className="absolute flex flex-col items-end right-[33%] top-[82%]">
+                <div className='lg:mt-20 lg:px-0 px-5 order-2 lg:block hidden'>
+                    <div className='bg-play-image-mobile lg:bg-play-image bg-cover flex items-center justify-center bg-center lg:w-auto lg:h-[310.1px] w-[249px] h-[168.09px] lg:aspect-[1.126] relative'>
+                        <div className="absolute  hidden lg:flex flex-col items-end right-[33%] top-[82%]">
                             <AnimatedText className='uppercase text-xs lg:text-lg font-thin lg:font-light text-white' text='mini-games'/>
                             <AnimatedText className='uppercase text-xs lg:text-lg font-thin lg:font-light text-white' text='rewards'/>
                             <AnimatedText className='uppercase text-xs lg:text-lg font-thin lg:font-light text-white' text='events'/>
                         </div>
-                        <div className='self-center h-full flex items-start lg:pb-6 lg:p-3 p-2 justify-center'>
-                            <ProjectedButton buttonClass="hover:bg-play-light lg:h-[50%] h-[45%] duration-200 bg-white border border-play lg:w-full relative lg:px-10 lg:rounded-[40px] rounded-2xl lg:py-3 z-40 w-full flex items-center justify-center" className='absolute bg-play-light border border-play h-[45%] lg:h-[50%] w-full left-0 rounded-2xl lg:rounded-[40px] top-3 lg:top-5' imageSize='h-[40px] w-[105px] lg:w-[195px] lg:h-[75px]' addClass='w-full' image='/play_now.svg' color='play'/>
+                        <div className='self-center flex items-start lg:h-full lg:w-full lg:pb-6 lg:p-3 p-2 justify-center lg:mt-2 mt-3'>
+                            <ProjectedButton buttonClass="hover:bg-play-light px-6 py-4 lg:h-[50%] h-[45%] duration-200 bg-white border border-play lg:w-full relative lg:px-10 lg:rounded-[40px] rounded-3xl g:py-3 z-40 w-[214.44px] h-[94.68px] flex items-center justify-center" className='absolute bg-play-light border border-play h-[105%] lg:h-[50%] w-full left-0 lg:rounded-[40px] rounded-3xl top-3 lg:top-5' imageSize='h-[59.19px] w-[153.71px] lg:w-[195px] lg:h-[75px]' addClass='w-full' image='/play_now.svg' color='play'/>
                         </div>
                     </div>
                 </div>

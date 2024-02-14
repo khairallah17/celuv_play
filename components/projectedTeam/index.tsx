@@ -8,7 +8,8 @@ type Team = {
     name: string,
     position: string,
     slogon?: string,
-    image?: string
+    image?: string,
+    addClass?: string
 }
 
 const ProjectedTeam = (props:Team) => {
@@ -35,7 +36,7 @@ const ProjectedTeam = (props:Team) => {
             ease: "easeInOut"
         }}
         onAnimationComplete={() => setIsAnimating(false)}
-        className='flip-card w-[120px] relative z-[99] h-[131px] lg:h-[230.82px] lg:w-[212.35px] aspect-square bg-primary-lighter border border-primary rounded-3xl drop-shadow-primary-sh duration-200 hover:-translate-y-2 flex' onClick={handleFlip}>
+        className={`flip-card w-[120px] relative z-[99] h-[131px] lg:h-[230.82px] lg:w-[212.35px] aspect-square bg-primary-lighter border border-primary rounded-3xl drop-shadow-primary-sh duration-200 hover:-translate-y-2 flex ${props.addClass}`} onClick={handleFlip}>
         <div className={`flip-card-front bg-cover bg-center w-full h-[90%] p-10 rounded-3xl ${!isFliped ? "bg-primary" : "transparent"} durantion-700`}>
             <motion.div
                 initial={{opacity: 1}}

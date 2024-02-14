@@ -11,7 +11,8 @@ const team1 = [ { name: "justin ha", pos: "ceo", slog: "wemade wemademax" },
 
 const team2 = [ { name: "liam kim", pos: "art director" },
                 { name: "john ryu", pos: "advisor" },
-                { name: "yulia jo", pos: "sw engineer" }]
+                { name: "yulia jo", pos: "sw engineer" },
+                { name: "jane kim", pos: "marketing manager" },]
 
 const team3 = [ { name: "jane kim", pos: "marketing manager" },
                 { name: "susu kim", pos: "operations manager" },
@@ -35,15 +36,18 @@ const Team = () => {
                             <ProjectedTeam key={index} name={item.name} position={item.pos} slogon={item.slog} />
                         ))
                     }
+                </div>
+                <div className='flex items-center w-full h-full justify-center flex-wrap gap-6 lg:gap-16'>
                     {
                         team2.map((item, index) => (
-                            <ProjectedTeam key={index} name={item.name} position={item.pos}/>
+                            <ProjectedTeam addClass={`${index == (team2.length - 1) ? "lg:hidden" : ""}`} key={index} name={item.name} position={item.pos} />
                         ))
                     }
-
+                </div>
+                <div className='flex items-center w-full h-full justify-center flex-wrap gap-6 lg:gap-16'>
                     {
                         team3.map((item, index) => (
-                            <ProjectedTeam key={index} name={item.name} position={item.pos}/>
+                            <ProjectedTeam addClass={`${index == 0 ? "lg:block hidden" : ""}`} key={index} name={item.name} position={item.pos}/>
                         ))
                     }
                 </div>

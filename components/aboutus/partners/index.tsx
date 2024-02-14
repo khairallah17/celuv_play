@@ -26,7 +26,7 @@ const Partners = () => {
   return (
     <div className='container mx-auto relative z-50'>
 
-      <div className='relative w-full h-full grid px-5 lg:grid-cols-5 grid-cols-2 gap-4'>
+      <div className='relative w-full h-full grid px-5 lg:grid-cols-5 grid-cols-3 gap-4'>
 
         {
           logos.map((item, index) => (
